@@ -1,6 +1,6 @@
 # kikit
 
-kiki-ki's working kit: a Claude Code plugin marketplace.
+kiki-ki's working kit.
 
 ## Install
 
@@ -9,11 +9,8 @@ kiki-ki's working kit: a Claude Code plugin marketplace.
 /plugin install kikit@kikit
 ```
 
-To edit a plugin while you use it, add your clone as the marketplace instead. Claude Code then reads the plugin files in place, and edits take effect at the next session or after `/reload-plugins`.
-
-```sh
-claude plugin marketplace add /path/to/kikit
-```
+To edit a plugin while you use it, add your clone as the marketplace instead.
+Claude Code then reads the plugin files in place, and edits take effect at the next session or after `/reload-plugins`.
 
 ## Plugins
 
