@@ -1,0 +1,14 @@
+{
+  "name": "kikit",
+  "description": "kiki-ki's Claude Code plugins",
+  "owner": {
+    "name": "kiki-ki"
+  },
+  "plugins": [
+    {
+      "name": "kikit",
+      "source": "./plugins/kikit",
+      "description": "Working principles and task skills for coding agents"
+    }
+  ]
+}
