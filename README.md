@@ -9,9 +9,6 @@ kiki-ki's working kit.
 /plugin install kikit@kikit
 ```
 
-To edit a plugin while you use it, add your clone as the marketplace instead.
-Claude Code then reads the plugin files in place, and edits take effect at the next session or after `/reload-plugins`.
-
 ## Plugins
 
 | Plugin | Description |
