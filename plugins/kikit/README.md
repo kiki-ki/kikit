@@ -1,0 +1,27 @@
+# kikit
+
+どの作業にも効かせる原則と、特定の作業の手順をまとめた skill 集。skill は `kikit:principle-prove-it-works` のように `kikit:` を付けて呼ぶ。
+
+1 skill 1 責務とし、必要になったものだけを足す。層は名前の prefix で表す。
+
+- `principle-`: どの作業にも効かせる原則
+- `meta-`: skill や CLAUDE.md、hook などの設定を直す
+- `work-`: 特定の作業の手順
+
+| skill | 説明 |
+|---|---|
+| principle-laziness-protocol | 先に消し、問題を解く最小の変更に寄せる |
+| principle-prove-it-works | 完了と言う前に、代理指標ではなく本物で確かめ、結果を示す |
+| principle-fix-root-causes | 症状ではなく根本原因で直す |
+| principle-sequence-verifiable-units | 作業とコミットを、確かめられる小さな単位の列にする |
+| principle-encode-lessons-in-structure | 繰り返す指示を lint・hook・スクリプトなどの仕組みにする |
+| principle-build-the-lever | 手作業の代わりに、作業をする・確かめる道具を作る |
+| principle-guard-the-context-window | 大量の出力はサブエージェントに回し、繰り返し実行するものは費用を先に見積もる |
+| meta-reflect | セッションから学びを見つけ、仕組み・skill・CLAUDE.md への修正に振り分ける |
+| work-no-comments | コードをなぞるだけのコメントを、書いた本人とは別の目で判定して取り除く |
+| work-technical-writing | 読み手が一度読めば判断や作業に移れる文書を、過不足のない量で書く |
+| work-create-github-issue | 着手する人に文脈を引き渡す GitHub issue を起票する |
+
+## 出典
+
+principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
