@@ -64,9 +64,9 @@ jq -r 'select(.type=="user" and (.message.content|type)=="string") | .message.co
 
 承認された行だけを適用する。
 
-- 編集先が chezmoi 管理（`chezmoi source-path <path>` が通る）なら source 側を直し、`chezmoi apply <対象パス>` で反映する。引数なしの apply はセットアップスクリプトまで再実行することがある。
+- 編集先が別の場所から生成されるファイル（dotfiles の管理ツールが配置するものなど）なら、生成元を直してから反映する。生成先だけを直すと、次の反映で消える。
 - settings.json の変更は update-config スキルに従う。
 - スキルへの大きな変更（新しい節の追加や 10 行を超える変更）は、skill-creator スキルが使えれば、それで下書き・試行・改善を繰り返す。
-- 新しいスキルの名前は `~/.claude/skills/README.md` の prefix の規約に従う。
+- kikit に新しいスキルを足すときは、名前を [kikit の README](../../README.md) の prefix の規約に合わせる。
 
 最後に、適用したものと却下したものを 1 行ずつ報告する。
