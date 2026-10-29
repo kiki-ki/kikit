@@ -4,5 +4,6 @@
   "author": {
     "name": "kiki-ki"
   },
-  "repository": "https://github.com/kiki-ki/kikit"
+  "repository": "https://github.com/kiki-ki/kikit",
+  "license": "MIT"
 }
