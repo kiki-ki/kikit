@@ -47,14 +47,10 @@ jobs:
           version: 1.31.1
 
   status-check:
-    runs-on: ubuntu-latest
     if: always()
     needs: [check, links, workflows]
+    runs-on: ubuntu-latest
     steps:
-      - run: |
-          if [[ "$FAILED" == "true" ]]; then
-            echo "Checks failed"
-            exit 1
-          fi
-        env:
-          FAILED: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
+      - uses: re-actors/alls-green@b5b5b37504aa4183270bd3d855c52a67f212be35 # v1.3.0
+        with:
+          jobs: ${{ toJSON(needs) }}
