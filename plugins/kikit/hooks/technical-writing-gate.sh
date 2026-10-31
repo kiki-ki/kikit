@@ -5,18 +5,15 @@ set -u
 # Fail open: this hook nudges writing, and blocking all writes on a machine without jq would be worse
 command -v jq >/dev/null 2>&1 || exit 0
 
-input=$(cat)
-field() { jq -r "$1 // empty" <<<"$input"; }
-
-session_id=$(field .session_id)
+session_id='' agent_id='' skill='' file_path=''
+eval "$(jq -r '@sh "session_id=\(.session_id // "") agent_id=\(.agent_id // "") skill=\(.tool_input.skill // .command_name // "") file_path=\(.tool_input.file_path // "")"')"
 [ -n "$session_id" ] || exit 0
-state_dir="${CLAUDE_PLUGIN_DATA:-${TMPDIR:-/tmp}/kikit}/technical-writing"
+state_dir="$CLAUDE_PLUGIN_DATA/technical-writing"
 # Subagents share the parent's session_id, so key by agent_id too or they would pass on the parent's call
-marker="$state_dir/$session_id.$(field .agent_id)"
+marker="$state_dir/$session_id.$agent_id"
 
 case "${1:-}" in
   record)
-    skill=$(field '.tool_input.skill // .command_name')
     if [[ "$skill" =~ (^|:)work-technical-writing$ ]]; then
       mkdir -p "$state_dir" && touch "$marker"
     fi
@@ -30,14 +27,14 @@ case "${1:-}" in
     # hooks.json passes the gh command it matched with `if`; Write and Edit pass nothing
     target=${2:-}
     if [ -z "$target" ]; then
-      target=$(field .tool_input.file_path)
-      case "$target" in
+      case "$file_path" in
         *.md | *.MD) ;;
         *) exit 0 ;;
       esac
-      case "$target" in
+      case "$file_path" in
         /tmp/* | /private/tmp/* | */.claude/projects/*/memory/*) exit 0 ;;
       esac
+      target=$file_path
     fi
     echo "${target} の前に、Skill ツールで kikit:work-technical-writing を読み込んでから書き直してください。人が読む文章はこの skill に沿って書きます。" >&2
     exit 2

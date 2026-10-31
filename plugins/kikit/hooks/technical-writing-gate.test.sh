@@ -29,6 +29,7 @@ bash_cmd() { jq -cn --arg c "$1" '{session_id:"s1",tool_name:"Bash",tool_input:{
 expect 2 "edit README.md" check "$(edit /repo/README.md)"
 expect 2 "write SKILL.md" check '{"session_id":"s1","tool_name":"Write","tool_input":{"file_path":"/repo/skills/x/SKILL.md"}}'
 expect 0 "edit code" check "$(edit /repo/main.go)"
+expect 2 "path with shell syntax is not run" check "$(jq -cn --arg p "/repo/'\$(touch $CLAUDE_PLUGIN_DATA/pwned)'.md" '{session_id:"s1",tool_name:"Edit",tool_input:{file_path:$p}}')"
 expect 0 "edit under /tmp" check "$(edit /tmp/notes.md)"
 expect 0 "edit under /private/tmp" check "$(edit /private/tmp/x/notes.md)"
 expect 0 "edit memory" check "$(edit /Users/u/.claude/projects/p/memory/MEMORY.md)"
@@ -50,6 +51,11 @@ expect 2 "subagent blocked again after compact" check "$(edit /repo/README.md ',
 expect 0 "record via slash command" record '{"session_id":"s1","command_name":"kikit:work-technical-writing","expansion_type":"slash_command"}'
 expect 0 "allowed after slash command" check "$(edit /repo/README.md)"
 expect 2 "other session still blocked" check '{"session_id":"s2","tool_name":"Edit","tool_input":{"file_path":"/repo/README.md"}}'
+
+if [ -e "$CLAUDE_PLUGIN_DATA/pwned" ]; then
+  echo "FAIL: input was run as shell" >&2
+  failures=$((failures + 1))
+fi
 
 if [ "$failures" -gt 0 ]; then
   echo "$failures failure(s)" >&2
