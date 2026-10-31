@@ -11,12 +11,13 @@ diff から読み取れないことだけを書いた PR を作る。
 
 ## 手順
 
-1. base を決める。指定がなければ、リポジトリの既定のブランチにする。`git log <base>..HEAD` と `git diff <base>...HEAD` で PR が含む変更を読む。関係のない変更や未コミットの変更があれば、止まってユーザーに確かめる
-2. ブランチが push されていなければ `git push -u origin <branch>` で push する
-3. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`.github/pull_request_template.md` があれば、下のテンプレートの代わりにその節立てを使う
-4. 下の「作る前に見直すこと」で見直す
-5. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る。シングルクォートの heredoc は本文をそのまま渡すので、backtick、`$`、`\` はエスケープしない
-6. PR の URL をユーザーに伝える
+1. base を決める。指定がなければ、リポジトリの既定のブランチにする
+2. `git log <base>..HEAD` と `git diff <base>...HEAD` で PR が含む変更を読む。関係のない変更や未コミットの変更があれば、止まってユーザーに確かめる
+3. ブランチが push されていなければ `git push -u origin <branch>` で push する
+4. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`.github/pull_request_template.md` があれば、下のテンプレートの代わりにその節立てを使う
+5. 下の「作る前に見直すこと」で見直す
+6. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る。シングルクォートの heredoc は本文をそのまま渡すので、backtick、`$`、`\` はエスケープしない
+7. PR の URL をユーザーに伝える
 
 ## タイトル
 
@@ -33,7 +34,7 @@ Closes: <issue の完全な URL>
 
 ## 判断したこと
 
-- 迷った決定から先に、1 項目に 1 つの決定を書き、理由を同じ項目の文で添える。迷った決定には、ほかに考えた案と、それを選ばなかった理由も書く
+迷った決定から先に、決定ごとに段落を分けて書く。段落の 1 文目に決定を書き、続く文で理由を書く。迷った決定には、ほかに考えた案と、それを選ばなかった理由も書く。
 
 ## 影響
 
