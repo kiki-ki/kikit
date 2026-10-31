@@ -1,10 +1,10 @@
 # kikit
 
-どの作業にも効かせる原則と、特定の作業やツールの手順をまとめた skill 集。`kikit:principle-prove-it-works` のように `kikit:` を付けて呼ぶ。各 skill をいつ使い何をするかは、リンク先の SKILL.md に書いてある。
+どの作業にも当てはまる原則と、特定の作業やツールの手順をまとめた skill 集。`kikit:principle-prove-it-works` のように `kikit:` を付けて呼ぶ。各 skill をいつ使い何をするかは、リンク先の SKILL.md に書いてある。
 
 1 skill 1 責務とし、必要になったものだけを足す。層は名前の prefix で表す。
 
-## principle: どの作業にも効かせる原則
+## principle: どの作業にも当てはまる原則
 
 この層の skill はモデルからは自動で呼ばれない。SessionStart の hook（[hooks/router.sh](hooks/router.sh)）が、各 SKILL.md の description とパスの一覧を [hooks/router.md](hooks/router.md) の前置きと合わせて差し込み、モデルは条件に当たった原則の SKILL.md を Read で読む。description から自動で呼ばせるより確実に読まれるためだ。
 
