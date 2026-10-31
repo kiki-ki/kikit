@@ -46,7 +46,7 @@ description: "人が後から読む文章を日本語や英語で書く・直す
 書き終えたら、次の順に点検して直す。
 
 1. [references/ai-tells.md](references/ai-tells.md) の項目と、上から順に照らし合わせる
-2. [references/formats.md](references/formats.md) と照らし合わせ、中身に合った書き方を選べているかを確かめる
+2. 「2. 組み立てる」で選んだ書き方が、`references/formats.md` に合っているかを確かめる
 3. 日本語なら [references/japanese-sentences.md](references/japanese-sentences.md) と照らし合わせる
 4. 見出しと各段落の最初の文だけを上から読み、「1. 書く前に決める」で決めた目的を果たせるかを確かめる。足りなければ足し、消しても読み手が困らない文は消す
 
