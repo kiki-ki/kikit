@@ -3,12 +3,66 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "Write|Edit|Bash",
+        "matcher": "Write|Edit",
         "hooks": [
           {
             "type": "command",
             "command": "bash",
             "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check"],
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(gh *pr create *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh pr create"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "if": "Bash(gh *pr edit *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh pr edit"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "if": "Bash(gh *pr comment *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh pr comment"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "if": "Bash(gh *pr review *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh pr review"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "if": "Bash(gh *issue create *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh issue create"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "if": "Bash(gh *issue edit *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh issue edit"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "if": "Bash(gh *issue comment *)",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/technical-writing-gate.sh", "check", "gh issue comment"],
             "timeout": 10
           }
         ]

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Usage: technical-writing-gate.sh record|reset|check, with the hook input JSON on stdin.
+# Usage: technical-writing-gate.sh record|reset|check [gh command], with the hook input JSON on stdin.
 set -u
 
 # Fail open: this hook nudges writing, and blocking all writes on a machine without jq would be worse
@@ -27,24 +27,18 @@ case "${1:-}" in
     ;;
   check)
     [ -e "$marker" ] && exit 0
-    case "$(field .tool_name)" in
-      Write | Edit)
-        target=$(field .tool_input.file_path)
-        case "$target" in
-          *.md | *.MD) ;;
-          *) exit 0 ;;
-        esac
-        case "$target" in
-          /tmp/* | /private/tmp/* | */.claude/projects/*/memory/*) exit 0 ;;
-        esac
-        ;;
-      Bash)
-        target=$(field .tool_input.command)
-        [[ "$target" =~ (^|[^[:alnum:]_-])gh[[:space:]]+(pr|issue)[[:space:]]+(create|edit|comment|review)([[:space:]]|$) ]] || exit 0
-        target="gh ${BASH_REMATCH[2]} ${BASH_REMATCH[3]}"
-        ;;
-      *) exit 0 ;;
-    esac
+    # hooks.json passes the gh command it matched with `if`; Write and Edit pass nothing
+    target=${2:-}
+    if [ -z "$target" ]; then
+      target=$(field .tool_input.file_path)
+      case "$target" in
+        *.md | *.MD) ;;
+        *) exit 0 ;;
+      esac
+      case "$target" in
+        /tmp/* | /private/tmp/* | */.claude/projects/*/memory/*) exit 0 ;;
+      esac
+    fi
     echo "${target} の前に、Skill ツールで kikit:work-technical-writing を読み込んでから書き直してください。人が読む文章はこの skill に沿って書きます。" >&2
     exit 2
     ;;
