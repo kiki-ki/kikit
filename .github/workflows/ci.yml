@@ -21,9 +21,7 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec claude plugin validate --strict .
-      - run: pnpm exec claude plugin validate --strict plugins/kikit
-      - run: python3 scripts/check_skill_names.py
+      - run: pnpm run check:plugin
 
   text:
     runs-on: ubuntu-latest
@@ -37,7 +35,7 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint:text
+      - run: pnpm run check:text
 
   links:
     runs-on: ubuntu-latest
@@ -58,7 +56,10 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - run: python3 scripts/check_version_bump.py "origin/$BASE_REF"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      - run: node scripts/check-version-bump.mjs "origin/$BASE_REF"
         env:
           BASE_REF: ${{ github.base_ref }}
 
