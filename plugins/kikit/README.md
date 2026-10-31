@@ -33,5 +33,3 @@
 ## 出典
 
 principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
-
-work-technical-writing の `references/japanese-sentences.md` にある、読点、否定対比、箇条書きのラベルの規則は、[yomiyasu](https://github.com/nanaism/yomiyasu)（nanaism、MIT、v2.4.0）の推敲の規則を参考にしたもの。
