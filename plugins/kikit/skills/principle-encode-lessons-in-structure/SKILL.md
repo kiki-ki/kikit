@@ -9,7 +9,7 @@ description: "同じ指示を二度書こうとしていると気づいたとき
 
 ## 同じ指示を二度書こうとしたら
 
-1. lint、メタデータ、実行時チェック、スクリプトにできないかを考える。Claude Code なら hook（settings.json の hooks）や権限設定（permissions の allow / deny）も候補になる。
+1. lint、メタデータ、実行時チェック、スクリプトにできないかを考える。Claude Code なら hook（settings.json の hooks）や権限設定（permissions の allow と deny）も候補になる。
 2. できるなら仕組みにして、文章の指示は消す。
 3. できない（判断が要る）なら、指示を目立つ場所に移し、失敗例を添える。
 
