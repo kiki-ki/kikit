@@ -39,6 +39,15 @@
 | [tool-herdr](skills/tool-herdr/SKILL.md) | Herdr を操作する |
 | [tool-hunk-review](skills/tool-hunk-review/SKILL.md) | Hunk のセッションで差分をレビューする |
 
+## hook
+
+[technical-writing-gate.sh](hooks/technical-writing-gate.sh) は、`kikit:work-technical-writing` を呼ぶまで次の操作を止める。
+
+- `.md` への Write と Edit。`/tmp`、`/private/tmp`、Claude Code の memory の下は止めない
+- `gh pr` と `gh issue` の `create`、`edit`、`comment`、`review`
+
+呼んだ記録はセッションと subagent ごとに持ち、コンパクトと `/clear` で消える。jq を使うので、jq がないマシンでは何も止めない。
+
 ## 出典
 
 principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。

@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "check": "pnpm run check:plugin && pnpm run check:version && pnpm run check:text",
+    "check": "pnpm run check:plugin && pnpm run check:hooks && pnpm run check:version && pnpm run check:text",
     "check:plugin": "claude plugin validate --strict . && claude plugin validate --strict plugins/kikit && node scripts/check-skill-names.mjs",
+    "check:hooks": "shellcheck plugins/kikit/hooks/*.sh scripts/*.sh && bash scripts/test-technical-writing-gate.sh",
     "check:version": "node scripts/check-version-bump.mjs origin/main",
     "check:text": "textlint \"**/*.md\""
   },
