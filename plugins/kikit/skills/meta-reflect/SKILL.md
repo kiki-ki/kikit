@@ -38,7 +38,7 @@ jq -r 'select(.type=="user" and (.message.content|type)=="string") | .message.co
 
 [principle-encode-lessons-in-structure](../principle-encode-lessons-in-structure/SKILL.md) を読み、次の順に置き場を検討する。上ほど確実に効く。
 
-1. 仕組み: hook（settings.json の hooks）、権限設定（permissions の allow と deny）、lint、スクリプト。守らせたいことが機械的に判定できるなら、まずここにする
+1. 仕組み: hook、権限設定、lint、スクリプト。hook と権限設定は、settings.json の hooks と permissions に書く。守らせたいことが機械的に判定できるなら、まずここにする
 2. スキル: 手順や判断基準の抜けなら本文に、呼ばれるべき場面で呼ばれなかったなら description に書く
 3. CLAUDE.md: どのプロジェクトでも効かせたい判断の基準はグローバル（`~/.claude/CLAUDE.md`）に、そのリポジトリだけの約束事はリポジトリの CLAUDE.md に書く
 
