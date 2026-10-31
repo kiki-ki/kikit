@@ -51,6 +51,13 @@ expect 2 "subagent blocked again after compact" check "$(edit /repo/README.md ',
 expect 0 "record via slash command" record '{"session_id":"s1","command_name":"kikit:work-technical-writing","expansion_type":"slash_command"}'
 expect 0 "allowed after slash command" check "$(edit /repo/README.md)"
 expect 2 "other session still blocked" check '{"session_id":"s2","tool_name":"Edit","tool_input":{"file_path":"/repo/README.md"}}'
+touch -t 202001010000 "$CLAUDE_PLUGIN_DATA/technical-writing/old."
+expect 0 "reset on startup" reset '{"session_id":"s3","source":"startup"}'
+if [ -e "$CLAUDE_PLUGIN_DATA/technical-writing/old." ]; then
+  echo "FAIL: reset leaves records older than 7 days" >&2
+  failures=$((failures + 1))
+fi
+expect 0 "reset keeps other sessions' recent records" check "$(edit /repo/README.md)"
 
 if [ -e "$CLAUDE_PLUGIN_DATA/pwned" ]; then
   echo "FAIL: input was run as shell" >&2
