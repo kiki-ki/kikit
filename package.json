@@ -13,6 +13,7 @@
     "textlint-filter-rule-allowlist": "4.0.0",
     "textlint-rule-ja-hiragana-hojodoushi": "1.1.0",
     "textlint-rule-ja-hiragana-keishikimeishi": "1.1.0",
+    "textlint-rule-period-in-list-item": "1.0.1",
     "textlint-rule-preset-ja-spacing": "3.0.4",
     "textlint-rule-preset-ja-technical-writing": "12.0.2"
   },

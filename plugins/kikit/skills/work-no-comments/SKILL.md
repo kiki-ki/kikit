@@ -45,8 +45,8 @@ Agent ツールで general-purpose を 1 体起動し、[references/checker-prom
 
 「消すな」「文言を変えるな」「変える前に X に相談」のような制約のコメントは、対象によって扱いを分ける。
 
-- 自分たちが変えられないものについての制約: コメントを残す。
-- 自分たちのコードについての制約: [principle-encode-lessons-in-structure](../principle-encode-lessons-in-structure/SKILL.md) に従い、範囲内でいちばん安く守らせる方法（型、実行時チェック、テスト、lint）を提案して承認を待つ。承認されたら仕組みを入れてからコメントを消す。承認されなければコメントを残し、制約が仕組みで守られていないことを報告する。
+- 自分たちが変えられないものについての制約: コメントを残す
+- 自分たちのコードについての制約: [principle-encode-lessons-in-structure](../principle-encode-lessons-in-structure/SKILL.md) に従い、範囲内でいちばん安く守らせる方法（型、実行時チェック、テスト、lint）を提案して承認を待つ。承認されたら仕組みを入れてからコメントを消す。承認されなければコメントを残し、制約が仕組みで守られていないことを報告する
 
 ### 6. 報告する
 
