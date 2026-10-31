@@ -6,30 +6,38 @@
 
 ## principle: どの作業にも効かせる原則
 
-- [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md)
-- [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md)
-- [principle-fix-root-causes](skills/principle-fix-root-causes/SKILL.md)
-- [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md)
-- [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md)
-- [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md)
-- [principle-guard-the-context-window](skills/principle-guard-the-context-window/SKILL.md)
+| skill | 概要 |
+|---|---|
+| [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md) | 先に消し、最小の変更にする |
+| [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md) | 完了と言う前に本物で確かめる |
+| [principle-fix-root-causes](skills/principle-fix-root-causes/SKILL.md) | 根本原因で直す |
+| [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) | 確かめられる小さな単位で進める |
+| [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md) | 繰り返す指示を仕組みにする |
+| [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md) | 手作業の代わりに道具を作る |
+| [principle-guard-the-context-window](skills/principle-guard-the-context-window/SKILL.md) | コンテキストと費用の膨らみを抑える |
 
-## meta: skill や CLAUDE.md、hook などの設定を直す
+## meta: エージェントの働き方を改善する
 
-- [meta-reflect](skills/meta-reflect/SKILL.md)
+| skill | 概要 |
+|---|---|
+| [meta-reflect](skills/meta-reflect/SKILL.md) | セッションの学びを仕組みに残す |
 
 ## work: 特定の作業の手順
 
-- [work-technical-writing](skills/work-technical-writing/SKILL.md)
-- [work-no-comments](skills/work-no-comments/SKILL.md)
-- [work-create-github-issue](skills/work-create-github-issue/SKILL.md)
+| skill | 概要 |
+|---|---|
+| [work-technical-writing](skills/work-technical-writing/SKILL.md) | 一度読めば分かる文章を書く |
+| [work-no-comments](skills/work-no-comments/SKILL.md) | コードをなぞるだけのコメントを取り除く |
+| [work-create-github-issue](skills/work-create-github-issue/SKILL.md) | 着手できる GitHub issue を起票する |
 
 ## tool: 特定のツールの操作
 
 この層の skill は手順の本文を持たず、呼ばれたときにツールが出力する手順を読み込む。ツールの版と手順がずれない代わりに、ツールがインストールされていないマシンでは呼び出しが失敗する。
 
-- [tool-herdr](skills/tool-herdr/SKILL.md)
-- [tool-hunk-review](skills/tool-hunk-review/SKILL.md)
+| skill | 概要 |
+|---|---|
+| [tool-herdr](skills/tool-herdr/SKILL.md) | Herdr を操作する |
+| [tool-hunk-review](skills/tool-hunk-review/SKILL.md) | Hunk のセッションで差分をレビューする |
 
 ## 出典
 
