@@ -8,39 +8,31 @@
 
 この層の skill はモデルからは自動で呼ばれない。SessionStart の hook（[hooks/router.sh](hooks/router.sh)）が、各 SKILL.md の description とパスの一覧を [hooks/router.md](hooks/router.md) の前置きと合わせて差し込み、モデルは条件に当たった原則の SKILL.md を Read で読む。description から自動で呼ばせるより確実に読まれるためだ。
 
-| skill | 概要 |
-|---|---|
-| [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md) | 先に消し、最小の変更にする |
-| [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md) | 完了と言う前に本物で確かめる |
-| [principle-fix-root-causes](skills/principle-fix-root-causes/SKILL.md) | 根本原因で直す |
-| [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) | 確かめられる小さな単位で進める |
-| [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md) | 繰り返す指示を仕組みにする |
-| [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md) | 手作業の代わりに道具を作る |
-| [principle-guard-the-context-window](skills/principle-guard-the-context-window/SKILL.md) | コンテキストと費用の膨らみを抑える |
+- [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md): 先に消し、最小の変更にする
+- [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md): 完了と言う前に本物で確かめる
+- [principle-fix-root-causes](skills/principle-fix-root-causes/SKILL.md): 根本原因で直す
+- [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md): 確かめられる小さな単位で進める
+- [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md): 繰り返す指示を仕組みにする
+- [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md): 手作業の代わりに道具を作る
+- [principle-guard-the-context-window](skills/principle-guard-the-context-window/SKILL.md): コンテキストと費用の膨らみを抑える
 
 ## meta: エージェントの働き方を改善する
 
-| skill | 概要 |
-|---|---|
-| [meta-reflect](skills/meta-reflect/SKILL.md) | セッションの学びを仕組みに残す |
+- [meta-reflect](skills/meta-reflect/SKILL.md): セッションの学びを仕組みに残す
 
 ## work: 特定の作業の手順
 
-| skill | 概要 |
-|---|---|
-| [work-technical-writing](skills/work-technical-writing/SKILL.md) | 一度読めば分かる文章を書く |
-| [work-no-comments](skills/work-no-comments/SKILL.md) | コードをなぞるだけのコメントを取り除く |
-| [work-create-github-issue](skills/work-create-github-issue/SKILL.md) | 着手できる GitHub issue を起票する |
-| [work-review-github-pr](skills/work-review-github-pr/SKILL.md) | GitHub の PR をレビューし、指摘を下書きする |
+- [work-technical-writing](skills/work-technical-writing/SKILL.md): 一度読めば分かる文章を書く
+- [work-no-comments](skills/work-no-comments/SKILL.md): コードをなぞるだけのコメントを取り除く
+- [work-create-github-issue](skills/work-create-github-issue/SKILL.md): 着手できる GitHub issue を起票する
+- [work-review-github-pr](skills/work-review-github-pr/SKILL.md): GitHub の PR をレビューし、指摘を下書きする
 
 ## tool: 特定のツールの操作
 
 この層の skill は手順の本文を持たず、呼ばれたときにツールが出力する手順を読み込む。ツールの版と手順がずれない代わりに、ツールがインストールされていないマシンでは呼び出しが失敗する。
 
-| skill | 概要 |
-|---|---|
-| [tool-herdr](skills/tool-herdr/SKILL.md) | Herdr を操作する |
-| [tool-hunk-review](skills/tool-hunk-review/SKILL.md) | Hunk のセッションで差分をレビューする |
+- [tool-herdr](skills/tool-herdr/SKILL.md): Herdr を操作する
+- [tool-hunk-review](skills/tool-hunk-review/SKILL.md): Hunk のセッションで差分をレビューする
 
 ## 出典
 

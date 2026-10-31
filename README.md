@@ -11,9 +11,7 @@ kiki-ki's working kit.
 
 ## Plugins
 
-| Plugin | Description |
-|---|---|
-| [kikit](plugins/kikit) | Working principles and task skills for coding agents |
+- [kikit](plugins/kikit): Working principles and task skills for coding agents
 
 ## Development
 
