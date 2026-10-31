@@ -31,6 +31,7 @@
 | [work-technical-writing](skills/work-technical-writing/SKILL.md) | 一度読めば分かる文章を書く |
 | [work-no-comments](skills/work-no-comments/SKILL.md) | コードをなぞるだけのコメントを取り除く |
 | [work-create-github-issue](skills/work-create-github-issue/SKILL.md) | 着手できる GitHub issue を起票する |
+| [work-create-github-pr](skills/work-create-github-pr/SKILL.md) | レビューできる draft PR を作る |
 | [work-review-github-pr](skills/work-review-github-pr/SKILL.md) | GitHub の PR をレビューし、指摘を下書きする |
 
 ## tool: 特定のツールの操作
