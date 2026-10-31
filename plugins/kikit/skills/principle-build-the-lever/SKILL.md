@@ -1,6 +1,7 @@
 ---
 name: principle-build-the-lever
 description: "自明でない作業（編集、移行、分析、チェック）をするときに適用する。手で進める代わりに、作業をする・確かめる道具（codemod、スクリプト、ジェネレータ、サブエージェント向けのスキル）を作り、レビュアーが再実行できる形で残す。"
+disable-model-invocation: true
 ---
 
 # principle-build-the-lever

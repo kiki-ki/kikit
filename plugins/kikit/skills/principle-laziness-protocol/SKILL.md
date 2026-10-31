@@ -1,6 +1,7 @@
 ---
 name: principle-laziness-protocol
 description: "追加・リファクタ・書き直しの順番を決めるとき、diff の大きさを評価するとき、抽象化・レイヤー・値の引き回しを足したくなったときに適用する。先に消し、問題を解く最小の変更にする。"
+disable-model-invocation: true
 ---
 
 # principle-laziness-protocol

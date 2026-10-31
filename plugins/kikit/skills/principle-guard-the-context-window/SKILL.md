@@ -1,6 +1,7 @@
 ---
 name: principle-guard-the-context-window
 description: "コンテキストや費用が膨らみそうなとき（大きな出力、長いファイル、同じものの読み直し、作業を並列に配る計画、評価や比較のために claude -p やサブエージェントを何度も実行する計画）に適用する。大量のデータはサブエージェントに読ませて要約だけを持ち込み、繰り返し実行するものは回数と費用を先に見積もる。"
+disable-model-invocation: true
 ---
 
 # principle-guard-the-context-window
