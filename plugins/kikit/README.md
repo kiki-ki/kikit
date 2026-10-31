@@ -32,7 +32,7 @@
 | work-herdr | Herdr の名前を出されたとき | インストールされた herdr の版に合った手順を `herdr --skill` から読み込んで従う |
 | work-hunk-review | Hunk のセッションで差分をレビューするとき | インストールされた hunk に同梱の hunk-review の手順を読み込んで従う |
 
-work-herdr と work-hunk-review は手順の本文を持たず、呼ばれたときにツールの出力を読み込む。ツールの版と手順がずれない代わりに、ツールがインストールされていないマシンでは呼び出しが失敗する。
+work-herdr と work-hunk-review は手順の本文を持たず、呼ばれたときにツールの出力を読み込む。ツールの版と手順がずれない代わりに、ツールがインストールされていないマシンでは呼び出しが失敗する。work-hunk-review は `hunk skill show` を使うので、hunk 0.24.0 以降が要る。
 
 ## 出典
 
