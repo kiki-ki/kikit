@@ -17,6 +17,9 @@ for (const path of skills) {
   } else if (name !== dir) {
     errors.push(`${path}: name "${name}" does not match directory "${dir}"`);
   }
+  if (!(/^name: [^"'\s]+$/m.test(frontmatter) && /^description: ".+"$/m.test(frontmatter))) {
+    errors.push(`${path}: write an unquoted one-line name and a double-quoted one-line description; hooks/router.sh reads only this form`);
+  }
 }
 
 if (skills.length === 0) {
