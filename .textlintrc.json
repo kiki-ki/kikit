@@ -6,6 +6,23 @@
   },
   "rules": {
     "@textlint-ja/preset-ai-writing": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-hiragana-keishikimeishi": true,
+    "preset-ja-spacing": {
+      "ja-nakaguro-or-halfwidth-space-between-katakana": false,
+      "ja-no-space-around-parentheses": false,
+      "ja-space-around-code": {
+        "before": true,
+        "after": true
+      },
+      "ja-space-around-link": {
+        "before": true,
+        "after": true
+      },
+      "ja-space-between-half-and-full-width": {
+        "space": "always"
+      }
+    },
     "preset-ja-technical-writing": {
       "arabic-kanji-numbers": false,
       "no-doubled-joshi": {
