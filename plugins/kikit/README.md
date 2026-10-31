@@ -6,7 +6,7 @@
 
 ## principle: どの作業にも当てはまる原則
 
-この層の skill はモデルからは自動で呼ばれない。SessionStart の hook（[hooks/router.sh](hooks/router.sh)）が、各 SKILL.md の description とパスの一覧を [hooks/router.md](hooks/router.md) の前置きと合わせて差し込み、モデルは条件に当たった原則の SKILL.md を Read で読む。description から自動で呼ばせるより確実に読まれるためだ。
+この層の skill はモデルからは自動で呼ばれない。SessionStart の hook（[hooks/router.sh](hooks/router.sh)）が、各 SKILL.md の description とパスの一覧を [hooks/router.md](hooks/router.md) の前置きと合わせて差し込む。モデルは、条件に当たった原則の SKILL.md を Read で読む。description から自動で呼ばせるより確実に読まれるためだ。
 
 - [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md): 先に消し、最小の変更にする
 - [principle-prove-it-works](skills/principle-prove-it-works/SKILL.md): 完了と言う前に本物で確かめる
