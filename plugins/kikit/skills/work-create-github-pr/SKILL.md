@@ -23,7 +23,7 @@ description: "GitHub の PR を作るときに使う。「PR 作って」「PR �
 
 ## 本文テンプレート
 
-本文は、リポジトリの既存の PR と同じ言語で書く。英語なら、見出しを Intent、Approach、Impact、Testing にする。中身のない節は置かない。方針も影響もない小さな PR は、見出しを付けずに、意図と検証だけで書く。
+本文は、リポジトリの既存の PR と同じ言語で書く。英語なら、見出しを Intent、Approach、Impact、Testing にする。意図と検証の節は必ず置き、方針と影響の節は書くことがなければ置かない。
 
 各節を段落と箇条書きのどちらで書くかは、中身の量に合わせて [formats.md](../work-technical-writing/references/formats.md) で決める。検証だけは、チェックボックスの箇条書きで書く。
 
