@@ -19,7 +19,7 @@ kiki-ki's working kit.
 
 Bump `version` in the plugin's `.claude-plugin/plugin.json` in every PR that changes the plugin. Installed copies update only when the version changes, and CI fails the PR without a bump.
 
-Run `pnpm install` and `pnpm run check` to run the manifest, skill name, version and prose checks locally. CI also checks relative links and workflows.
+Run `pnpm install` and `pnpm run check` to run the manifest, skill name, version and prose checks locally. CI also checks relative links.
 
 ## License
 
