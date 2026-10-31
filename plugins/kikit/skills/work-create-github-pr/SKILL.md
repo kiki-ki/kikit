@@ -10,9 +10,9 @@ description: "GitHub の PR を作るときに使う。「PR 作って」「PR �
 ## 手順
 
 1. base を決める。指定がなければ、リポジトリの既定のブランチにする
-2. `git log <base>..HEAD` と `git diff <base>...HEAD` で PR が含む変更を読む。関係のない変更や未コミットの変更があれば、止まってユーザーに確かめる
-3. ブランチが push されていなければ `git push -u origin <branch>` で push する
-4. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`.github/pull_request_template.md` があれば、下のテンプレートの代わりにその節立てを使う
+2. `git fetch origin` のあと、`git log origin/<base>..HEAD` と `git diff origin/<base>...HEAD` で PR が含む変更を読む。関係のない変更や未コミットの変更があれば、止まってユーザーに確かめる
+3. `git push -u origin <branch>` で、リモートにないコミットを push する
+4. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`git ls-files | grep -i pull_request_template` で GitHub の PR テンプレートが見つかれば、下のテンプレートの代わりにその節立てを使う
 5. 下の「作る前に見直すこと」で見直す
 6. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る。シングルクォートの heredoc は本文をそのまま渡すので、backtick、`$`、`\` はエスケープしない
 7. PR の URL をユーザーに伝える
