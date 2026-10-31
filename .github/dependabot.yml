@@ -1,14 +1,37 @@
 version: 2
+
 updates:
-  - package-ecosystem: github-actions
-    directory: /
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: weekly
+      interval: "weekly"
+      day: "saturday"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    # Matches minimumReleaseAge in pnpm-workspace.yaml, which rejects anything newer
     cooldown:
-      default-days: 7
-  - package-ecosystem: npm
-    directory: /
+      default-days: 3
+    groups:
+      minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: weekly
+      interval: "weekly"
+      day: "saturday"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
     cooldown:
-      default-days: 7
+      default-days: 3
+    groups:
+      minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
