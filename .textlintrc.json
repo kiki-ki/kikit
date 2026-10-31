@@ -8,6 +8,9 @@
     "@textlint-ja/preset-ai-writing": true,
     "ja-hiragana-hojodoushi": true,
     "ja-hiragana-keishikimeishi": true,
+    "period-in-list-item": {
+      "periodMarks": ["。", "．"]
+    },
     "preset-ja-spacing": {
       "ja-nakaguro-or-halfwidth-space-between-katakana": false,
       "ja-no-space-around-parentheses": false,
