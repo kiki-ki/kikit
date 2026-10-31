@@ -6,6 +6,6 @@ allowed-tools: Bash(hunk skill show)
 
 # work-hunk-review
 
-インストールされた hunk の版に合った手順を `hunk skill show` から読み込む。以下がその出力で、これに従う。hunk 0.24.0 以降が要る。
+インストールされた hunk の版に合った手順を `hunk skill show` から読み込む。以下がその出力で、これに従う。
 
 !`hunk skill show`
