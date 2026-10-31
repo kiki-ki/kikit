@@ -2,6 +2,7 @@
 # Usage: technical-writing-gate.sh record|reset|check, with the hook input JSON on stdin.
 set -u
 
+# Fail open: this hook nudges writing, and blocking all writes on a machine without jq would be worse
 command -v jq >/dev/null 2>&1 || exit 0
 
 input=$(cat)
@@ -10,6 +11,7 @@ field() { jq -r "$1 // empty" <<<"$input"; }
 session_id=$(field .session_id)
 [ -n "$session_id" ] || exit 0
 state_dir="${CLAUDE_PLUGIN_DATA:-${TMPDIR:-/tmp}/kikit}/technical-writing"
+# Subagents share the parent's session_id, so key by agent_id too or they would pass on the parent's call
 marker="$state_dir/$session_id.$(field .agent_id)"
 
 case "${1:-}" in

@@ -29,6 +29,7 @@
     ],
     "UserPromptExpansion": [
       {
+        "matcher": "work-technical-writing$",
         "hooks": [
           {
             "type": "command",
