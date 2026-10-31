@@ -41,6 +41,8 @@
 
 ## hook
 
+### technical-writing-gate.sh
+
 [technical-writing-gate.sh](hooks/technical-writing-gate.sh) は、`kikit:work-technical-writing` を呼ぶまで次の操作を止める。
 
 - `.md` への Write と Edit。`/tmp`、`/private/tmp`、Claude Code の memory の下は止めない
@@ -48,17 +50,9 @@
 
 呼んだ記録はセッションと subagent ごとに持ち、コンパクトと `/clear` で消える。jq を使うので、jq がないマシンでは何も止めない。
 
-## textlint
+### textlint-install.sh
 
-work-technical-writing は、`textlint` コマンドが使えるときだけ、書いた文章を [textlintrc.json](textlint/textlintrc.json) で検査する。使うには、textlint と次のルールを 1 つの `node_modules` にまとめて入れ、`textlint` を PATH に置く。パッケージごとに別々にグローバルへ入れると、textlint からルールが見えない。版は [package.json](../../package.json) に合わせる。
-
-- `textlint`
-- `textlint-filter-rule-allowlist`
-- `textlint-rule-preset-ja-technical-writing`
-- `@textlint-ja/textlint-rule-preset-ai-writing`
-- `textlint-rule-preset-ja-spacing`
-- `textlint-rule-ja-hiragana-keishikimeishi`
-- `textlint-rule-ja-hiragana-hojodoushi`
+[textlint-install.sh](hooks/textlint-install.sh) は、セッションの開始時に [textlint/package.json](textlint/package.json) の textlint とルールを、pnpm で plugin のデータ領域に入れる。lockfile が変わったときだけ入れ直し、pnpm がないマシンでは何もしない。work-technical-writing は、入っていればこの textlint と [textlintrc.json](textlint/textlintrc.json) で、書いた文章を検査する。
 
 ## 出典
 

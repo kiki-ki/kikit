@@ -1,5 +1,5 @@
 {
-  "description": "Require kikit:work-technical-writing before writing Markdown or GitHub PR and issue text",
+  "description": "Require kikit:work-technical-writing before writing Markdown or GitHub PR and issue text, and install textlint for it",
   "hooks": {
     "PreToolUse": [
       {
@@ -41,6 +41,18 @@
       }
     ],
     "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/textlint-install.sh"],
+            "async": true,
+            "timeout": 300
+          }
+        ]
+      },
       {
         "matcher": "clear|compact",
         "hooks": [
