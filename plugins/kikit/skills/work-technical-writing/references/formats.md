@@ -1,6 +1,6 @@
-# 段落、箇条書き、表、図の使い分け
+# 書き方の使い分け
 
-中身に合わせて、段落、箇条書き、番号付きの手順、表、コード、図のどれで書くかを決める。規則の多くは [Google developer documentation style guide](https://developers.google.com/style) をもとにしている。
+中身に合わせて書き方を決める。規則の多くは [Google developer documentation style guide](https://developers.google.com/style) をもとにしている。
 
 ## 書き方を選ぶ
 
