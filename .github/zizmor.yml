@@ -1,0 +1,5 @@
+rules:
+  dependabot-cooldown:
+    # Updates are merged by hand, and pnpm's minimumReleaseAge already holds back anything under 3 days
+    config:
+      days: 3
