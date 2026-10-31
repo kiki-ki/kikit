@@ -5,10 +5,17 @@
     "check:plugin": "claude plugin validate --strict . && claude plugin validate --strict plugins/kikit && node scripts/check-skill-names.mjs",
     "check:hooks": "shellcheck plugins/kikit/hooks/*.sh scripts/*.sh && bash scripts/test-technical-writing-gate.sh",
     "check:version": "node scripts/check-version-bump.mjs origin/main",
-    "check:text": "bash scripts/check-text.sh"
+    "check:text": "textlint --config plugins/kikit/textlint/textlintrc.json \"**/*.md\""
   },
   "devDependencies": {
-    "@anthropic-ai/claude-code": "2.1.312"
+    "@anthropic-ai/claude-code": "2.1.312",
+    "@textlint-ja/textlint-rule-preset-ai-writing": "1.7.0",
+    "textlint": "15.8.0",
+    "textlint-filter-rule-allowlist": "4.0.0",
+    "textlint-rule-ja-hiragana-hojodoushi": "1.1.0",
+    "textlint-rule-ja-hiragana-keishikimeishi": "1.1.0",
+    "textlint-rule-preset-ja-spacing": "3.0.4",
+    "textlint-rule-preset-ja-technical-writing": "12.0.2"
   },
   "packageManager": "pnpm@12.15.0"
 }

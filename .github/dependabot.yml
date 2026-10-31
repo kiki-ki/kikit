@@ -2,9 +2,7 @@ version: 2
 
 updates:
   - package-ecosystem: "npm"
-    directories:
-      - "/"
-      - "/plugins/kikit/textlint"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "saturday"
