@@ -85,7 +85,7 @@ review 全体の本文（`body`）は書かない。総評と diff の外の行�
 }
 ```
 
-- `side` は、追加した行と変更のない行なら `RIGHT`（head の行番号）、削除した行なら `LEFT`（base の行番号）にする。複数行なら `start_line` と `start_side` を足す
+- `side` は、追加した行と変更のない行なら `RIGHT` にして head の行番号を使い、削除した行なら `LEFT` にして base の行番号を使う。複数行なら `start_line` と `start_side` を足す
 - diff に含まれない行が 1 件でもあると、全体が 422 で失敗する。diff の外の行への指摘はコメントにしない
 
 作ったら PR の URL を伝え、Files changed の画面で確かめて送るよう頼む。このスキルは review を送らない。
