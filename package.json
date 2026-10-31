@@ -5,7 +5,7 @@
     "check:plugin": "claude plugin validate --strict . && claude plugin validate --strict plugins/kikit && node scripts/check-skill-names.mjs",
     "check:hooks": "shellcheck plugins/kikit/hooks/*.sh scripts/*.sh && bash scripts/test-technical-writing-gate.sh",
     "check:version": "node scripts/check-version-bump.mjs origin/main",
-    "check:text": "textlint --config plugins/kikit/textlint/textlintrc.json \"**/*.md\""
+    "check:text": "textlint \"**/*.md\""
   },
   "devDependencies": {
     "@anthropic-ai/claude-code": "2.1.312",

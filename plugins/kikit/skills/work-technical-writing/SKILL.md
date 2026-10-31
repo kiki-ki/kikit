@@ -34,8 +34,7 @@ description: "人が後から読む文章を日本語や英語で書く・直す
 
 1. [references/ai-tells.md](references/ai-tells.md) を上から当てる。
 2. 日本語なら [references/japanese-sentences.md](references/japanese-sentences.md) を当てる。
-3. `textlint` コマンドが使えるなら、`textlint --config ${CLAUDE_PLUGIN_ROOT}/textlint/textlintrc.json` をかけて指摘を直す。ファイルはパスを渡し、PR の本文のようにファイルでないものは `--stdin --stdin-filename body.md` で渡す。
-4. 見出しと各段落の最初の文だけを上から読み、1 で決めた判断・実行に届くかを確かめる。足りなければ足し、消しても読み手が困らない文は消す。
+3. 見出しと各段落の最初の文だけを上から読み、1 で決めた判断・実行に届くかを確かめる。足りなければ足し、消しても読み手が困らない文は消す。
 
 規則に従うとかえって読みにくくなる文は、別の方法で直すか、そのままにする。規則は読み手のためにある。
 

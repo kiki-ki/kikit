@@ -48,18 +48,6 @@
 
 呼んだ記録はセッションと subagent ごとに持ち、コンパクトと `/clear` で消える。jq を使うので、jq がないマシンでは何も止めない。
 
-## textlint
-
-work-technical-writing は、`textlint` コマンドが使えるときだけ、書いた文章を [textlintrc.json](textlint/textlintrc.json) で検査する。使うには、textlint と次のルールを 1 つの `node_modules` にまとめて入れ、`textlint` を PATH に置く。パッケージごとに別々にグローバルへ入れると、textlint からルールが見えない。版は [package.json](../../package.json) に合わせる。
-
-- `textlint`
-- `textlint-filter-rule-allowlist`
-- `textlint-rule-preset-ja-technical-writing`
-- `@textlint-ja/textlint-rule-preset-ai-writing`
-- `textlint-rule-preset-ja-spacing`
-- `textlint-rule-ja-hiragana-keishikimeishi`
-- `textlint-rule-ja-hiragana-hojodoushi`
-
 ## 出典
 
 principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
