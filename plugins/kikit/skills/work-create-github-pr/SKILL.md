@@ -25,7 +25,7 @@ description: "GitHub の PR を作るときに使う。「PR 作って」「PR �
 
 本文は、リポジトリの既存の PR と同じ言語で書く。英語なら、見出しを Intent、Approach、Impact、Testing にする。意図と検証の節は必ず置き、方針と影響の節は書くことがなければ置かない。
 
-各節を段落と箇条書きのどちらで書くかは、中身の量に合わせて [formats.md](../work-technical-writing/references/formats.md) で決める。検証だけは、チェックボックスの箇条書きで書く。
+各節の書き方は、中身に合わせて [formats.md](../work-technical-writing/references/formats.md) で選ぶ。検証だけは、チェックボックスの箇条書きで書く。
 
 ```markdown
 Closes: <issue の完全な URL>
