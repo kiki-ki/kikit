@@ -27,6 +27,8 @@ description: "GitHub issue を起票するときに使う。「issue 作って�
 
 既定では次の節で書く。issue の種類に合わせて節を足したり省いたりする。
 
+各節の書き方は、中身に合わせて [formats.md](../work-technical-writing/references/formats.md) で選ぶ。ゴールと作業内容だけは、テンプレートの形の箇条書きで書く。
+
 ```markdown
 ## 概要
 
