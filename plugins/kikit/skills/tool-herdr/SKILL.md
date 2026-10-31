@@ -6,6 +6,6 @@ allowed-tools: Bash(herdr --skill)
 
 # tool-herdr
 
-インストールされた herdr の版に合った手順を `herdr --skill` から読み込む。以下がその出力で、これに従う。
+以下は `herdr --skill` の出力で、インストールされた herdr の版に合った手順が入っている。これに従う。
 
 !`herdr --skill`
