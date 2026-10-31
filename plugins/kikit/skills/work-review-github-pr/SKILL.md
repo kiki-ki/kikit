@@ -11,7 +11,7 @@ description: "GitHub の PR をレビューするときに使う。「PR をレ�
 
 ### 1. 材料を集める
 
-PR 番号か URL を受け取る。なければ今のブランチの PR を使う。PR の URL から `<owner>/<repo>` と `<number>` を決める。
+PR 番号か URL を受け取る。なければ今のブランチの PR を使う。`gh pr view <PR> --json url` で PR の URL を確かめ、そこから `<owner>/<repo>` と `<number>` を決める。
 
 - 本文、コミット、既存のレビュー: `gh pr view <PR> --json title,body,headRefOid,files,commits,closingIssuesReferences,reviews,comments`
 - インラインのレビューコメント: `gh api repos/<owner>/<repo>/pulls/<number>/comments --paginate`
@@ -38,7 +38,7 @@ linter や formatter が見つけるものは指摘しない。
 
 ### 4. 指摘を分けて確かめる
 
-`/code-review` と手順 3 の指摘のうち、同じものはまとめ、次の 4 種類に分ける。起こりにくいものや、起きても影響の小さいものは捨てる。
+`/code-review` と手順 3 の指摘のうち、同じものはまとめ、次の 4 種類に分ける。種類と起こりやすさは、見積もれるだけのコードを読んで決める。起こりにくいものや、起きても影響の小さいものは、ここで捨てる。
 
 - `MUST`: マージ前に直す必要がある。
 - `WANT`: 直してほしいが、マージは止めない。
@@ -58,8 +58,21 @@ linter や formatter が見つけるものは指摘しない。
 
 [work-technical-writing](../work-technical-writing/SKILL.md) を読んでからコメントを書く。
 
-- 1 コメントに 1 指摘を書く。先頭に `MUST:` のように種類を付け、問題、根拠、直し方の案の順に書く。数行で済む修正は `suggestion` ブロックで示す。
+- 1 コメントに 1 指摘を書き、次の型に沿う。種類は単独の行に置き、問題の文が折り返しても種類が埋もれないようにする。
 - 言語は PR の既存のやり取りに合わせ、メンションは書かない。
+
+````markdown
+WANT:
+<問題を 1 文で。何が、どの場合に困るか>
+
+<根拠。バグなら壊れる入力や状態、スコープなら本文と diff の食い違い、再利用なら置き換え先のコード>
+
+<直し方の案。数行で済むなら suggestion ブロックにする>
+````
+
+`ASK` は、問題の代わりに質問を書き、根拠の代わりに、答えによって何が変わるかを書く。直し方の案は書かない。
+
+review 全体の本文（`body`）は、総評を 1〜2 文書き、diff の外の行への指摘があれば `file:line` 付きの箇条書きで続ける。
 
 次の JSON をファイルに書き、`gh api repos/<owner>/<repo>/pulls/<number>/reviews --method POST --input <ファイル>` で作る。`event` を省くと pending review になる。
 
