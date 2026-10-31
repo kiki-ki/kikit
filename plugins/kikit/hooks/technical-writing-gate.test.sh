@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -u
 
-gate="$(dirname "$0")/../plugins/kikit/hooks/technical-writing-gate.sh"
+gate="$(dirname "$0")/technical-writing-gate.sh"
 CLAUDE_PLUGIN_DATA=$(mktemp -d)
 export CLAUDE_PLUGIN_DATA
 trap 'rm -rf "$CLAUDE_PLUGIN_DATA"' EXIT
