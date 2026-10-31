@@ -1,0 +1,22 @@
+{
+  "filters": {
+    "allowlist": {
+      "allow": ["/「[^」]*」/"]
+    }
+  },
+  "rules": {
+    "@textlint-ja/preset-ai-writing": true,
+    "preset-ja-technical-writing": {
+      "arabic-kanji-numbers": false,
+      "no-doubled-joshi": {
+        "allow": ["も"]
+      },
+      "no-exclamation-question-mark": {
+        "allowHalfWidthExclamation": true
+      },
+      "sentence-length": {
+        "max": 120
+      }
+    }
+  }
+}
