@@ -9,11 +9,12 @@ permissions:
   contents: read
 
 jobs:
-  plugin:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          fetch-depth: 0
           persist-credentials: false
       - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
@@ -21,21 +22,7 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run check:plugin
-
-  text:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version: 24
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm run check:text
+      - run: pnpm run check
 
   links:
     runs-on: ubuntu-latest
@@ -48,35 +35,26 @@ jobs:
           args: --offline --no-progress --include-fragments --exclude-path node_modules './**/*.md'
           jobSummary: false
 
-  version:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version: 24
-      - run: node scripts/check-version-bump.mjs "origin/$BASE_REF"
-        env:
-          BASE_REF: ${{ github.base_ref }}
-
   workflows:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: actionlint
-        run: |
-          bash <(curl -fsSL "https://raw.githubusercontent.com/rhysd/actionlint/$ACTIONLINT_SHA/scripts/download-actionlint.bash") "$ACTIONLINT_VERSION"
-          ./actionlint -color
-        env:
-          ACTIONLINT_SHA: 914e7df21a07ef503a81201c76d2b11c789d3fca
-          ACTIONLINT_VERSION: 1.7.12
       - uses: zizmorcore/zizmor-action@53290badfa369cb0bf7ad16342cb62c2fa47ac7b # v0.8.0
         with:
           advanced-security: false
           version: 1.31.1
+
+  status-check:
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [check, links, workflows]
+    steps:
+      - run: |
+          if [[ "$FAILED" == "true" ]]; then
+            echo "Checks failed"
+            exit 1
+          fi
+        env:
+          FAILED: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
