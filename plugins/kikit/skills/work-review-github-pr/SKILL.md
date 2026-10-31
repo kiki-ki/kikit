@@ -80,7 +80,7 @@ review 全体の本文（`body`）は書かない。総評と diff の外の行�
 {
   "commit_id": "<headRefOid>",
   "comments": [
-    { "path": "<path>", "line": 42, "side": "RIGHT", "body": "<コメント>" }
+    { "path": "<path>", "line": <line>, "side": "RIGHT", "body": "<コメント>" }
   ]
 }
 ```
