@@ -15,6 +15,7 @@
 | [principle-fix-root-causes](skills/principle-fix-root-causes/SKILL.md) | 根本原因で直す |
 | [principle-sequence-verifiable-units](skills/principle-sequence-verifiable-units/SKILL.md) | 確かめられる小さな単位で進める |
 | [principle-encode-lessons-in-structure](skills/principle-encode-lessons-in-structure/SKILL.md) | 繰り返す指示を仕組みにする |
+| [principle-keep-one-source-of-truth](skills/principle-keep-one-source-of-truth/SKILL.md) | 同じ情報の正を 1 か所に決める |
 | [principle-build-the-lever](skills/principle-build-the-lever/SKILL.md) | 手作業の代わりに道具を作る |
 | [principle-guard-the-context-window](skills/principle-guard-the-context-window/SKILL.md) | コンテキストと費用の膨らみを抑える |
 
