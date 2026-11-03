@@ -14,7 +14,7 @@ description: "GitHub の PR を作るときに使う。「PR 作って」「PR �
 3. `git push -u origin <branch>` で、リモートにないコミットを push する
 4. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`git ls-files | grep -i pull_request_template` で GitHub の PR テンプレートが見つかれば、下のテンプレートの代わりにその節立てを使う
 5. 下の「作る前に見直すこと」で見直す
-6. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る。シングルクォートの heredoc は本文をそのまま渡すので、backtick、`$`、`\` はエスケープしない
+6. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る
 7. PR の URL をユーザーに伝える
 
 ## タイトル
@@ -58,5 +58,4 @@ Closes: <issue の完全な URL>
 - 本文が、いまの diff と食い違っていない
 - diff を読めば分かること（ファイルや関数ごとの変更の列挙、コードの逐語的な説明）を書いていない
 - 根拠のない「影響なし」と、セッション中のユーザーとのやり取りを書いていない
-- ユーザーや team をメンションしていない。ハンドル名は、バッククォートで囲むか言い換えてある
-- issue や PR を、`#123` ではなく完全な URL で参照している
+- 手順 4 で読んだ `work-technical-writing` の「GitHub に書くとき」に沿っている
