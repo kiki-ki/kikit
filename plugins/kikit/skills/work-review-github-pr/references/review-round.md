@@ -16,7 +16,7 @@ PR のレビューと自分の変更のレビューで共有する、1 回分の
 | スコープ | 目的と関係のない変更が混ざっていないか。PR なら本文と diff が食い違っていないか | 目的に結び付かない diff の箇所 |
 | テスト | 変更した振る舞いを、実物を動かすテストが確かめているか。モックの呼び出しや実装の写しだけを確かめていないか。状態機械や並行処理のように組み合わせの多いロジックを変えたなら、例のテストだけで済ませていないか（[principle-prove-it-works](../../principle-prove-it-works/SKILL.md)）。CI が失敗していれば、原因が変更にあるか | テストが通ったままになる壊し方 |
 | 根本原因 | nil チェック、例外の握りつぶし、リトライのような、症状を黙らせるガードで直していないか。同じパターンがほかに残っていないか。[principle-fix-root-causes](../../principle-fix-root-causes/SKILL.md) | 原因のある箇所、grep で見つかる同じパターン |
-| 仕組みで守る制約 | コメントやドキュメントだけで守らせている制約のうち、型、テスト、lint で守れるものがないか。lint は、導入済みのルールか公開されている既存のルールに限り、ルールを自作する案は出さない。[principle-encode-lessons-in-structure](../../principle-encode-lessons-in-structure/SKILL.md) | 制約を守らせる型、テスト、lint の案 |
+| 仕組みで守る制約 | コメントやドキュメントだけで守らせている制約のうち、型、テスト、lint で守れるものがないか。[principle-encode-lessons-in-structure](../../principle-encode-lessons-in-structure/SKILL.md) | 制約を守らせる型、テスト、lint の案 |
 | セキュリティ | secret の混入、信頼境界での入力の検証、権限の確認 | secret の行、検証されずに使われる入力、確認なしに通る操作 |
 
 ## 3. 指摘を分けて確かめる
