@@ -11,7 +11,7 @@ cleanup() {
 trap cleanup EXIT
 
 git init -q "$tmp/repo"
-git -C "$tmp/repo" -c core.hooksPath=/dev/null commit -q --allow-empty -m init
+git -C "$tmp/repo" -c core.hooksPath=/dev/null -c user.name=test -c user.email=test@example.com commit -q --allow-empty -m init
 git -C "$tmp/repo" worktree add -q "$tmp/wt"
 mkdir "$tmp/plain"
 repo=$(cd "$tmp/repo" && pwd -P)
