@@ -1,6 +1,7 @@
 ---
 name: work-review-own-changes
-description: "自分で実装した変更を、完了と言う前やコミット・PR の前にレビューして直すときに使う。「セルフレビューして」「レビューして直して」と頼まれたときも使う。/code-review と、書いた本人ではないサブエージェントに変更をレビューさせ、確かめた指摘を直して再レビューすることを、直すべき指摘がなくなるか上限の回数に達するまで繰り返す。"
+description: "自分で実装した変更を、/code-review と書いた本人ではないサブエージェントにレビューさせ、確かめた指摘を直して再レビューすることを、直すべき指摘がなくなるか上限の回数に達するまで繰り返す。ラウンドごとに費用がかかるので、ユーザーが /kikit:work-review-own-changes で呼んだときだけ動く。"
+disable-model-invocation: true
 ---
 
 # work-review-own-changes
