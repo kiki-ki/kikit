@@ -19,7 +19,6 @@ PR のレビューと自分の変更のレビューで共有する、1 回分の
 | 根本原因 | nil チェック、例外の握りつぶし、リトライのような、症状を黙らせるガードで直していないか。同じパターンがほかに残っていないか。[principle-fix-root-causes](../../principle-fix-root-causes/SKILL.md) | 原因のある箇所、grep で見つかる同じパターン |
 | 仕組みで守る制約 | コメントやドキュメントだけで守らせている制約のうち、型、テスト、lint で守れるものがないか。[principle-encode-lessons-in-structure](../../principle-encode-lessons-in-structure/SKILL.md) | 制約を守らせる型、テスト、lint の案 |
 | 再実行できる道具 | 同じ形の大量の編集を手でしていて、レビュアーが再実行して確かめられる codemod やスクリプトが残っていないか。[principle-build-the-lever](../../principle-build-the-lever/SKILL.md) | 同じ形の編集の箇所数 |
-| コミットの順番 | 各コミットが単独でビルドとテストを通すか。レビュアーが順に追えば正しさが分かる順に積んであるか。[principle-sequence-verifiable-units](../../principle-sequence-verifiable-units/SKILL.md) | ビルドやテストが通らないコミット、後のコミットで消える変更 |
 | セキュリティ | secret の混入、信頼境界での入力の検証、権限の確認 | secret の行、検証されずに使われる入力、確認なしに通る操作 |
 
 ## 3. 指摘を分けて確かめる
