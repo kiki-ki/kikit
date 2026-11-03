@@ -61,5 +61,5 @@ description: "GitHub issue を起票するときに使う。「issue 作って�
 
 ## 起票する前に見直すこと
 
-- 手順 4 で読んだ work-technical-writing の「GitHub に書くとき」に沿っている
+- 手順 4 で読んだ `work-technical-writing` の「GitHub に書くとき」に沿っている
 - 公開のリポジトリなら、社内のシステムの URL や、外に出せない情報を書いていない
