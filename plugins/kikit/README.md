@@ -31,7 +31,7 @@
 | [work-create-github-issue](skills/work-create-github-issue/SKILL.md) | 着手できる GitHub issue を起票する |
 | [work-create-github-pr](skills/work-create-github-pr/SKILL.md) | レビューできる draft PR を作る |
 | [work-review-github-pr](skills/work-review-github-pr/SKILL.md) | GitHub の PR をレビューし、指摘を下書きする |
-| [work-handle-out-of-scope-findings](skills/work-handle-out-of-scope-findings/SKILL.md) | スコープ外の発見を混ぜずに記録し、最後に処理を決める |
+| [work-handle-out-of-scope-findings](skills/work-handle-out-of-scope-findings/SKILL.md) | スコープ外の発見を、大きさに応じて混ぜるか、サブエージェントに任せるか、issue にする |
 
 ## tool: 特定のツールの操作
 
