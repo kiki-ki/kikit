@@ -1,6 +1,6 @@
 ---
 name: work-review-github-pr
-description: "GitHub の PR をレビューするときに使う。「PR をレビューして」「この PR 見て」と頼まれたときに使う。バグ探しは /code-review に任せ、PR の目的の達成、スコープ、テスト、セキュリティを補う。確かめた指摘を GitHub の pending review（下書き）に付け、送るかどうかはユーザーが決める。"
+description: "GitHub の PR をレビューするときに使う。「PR をレビューして」「この PR 見て」と頼まれたときに使う。バグ探しは /code-review に任せ、PR の目的の達成、スコープ、テスト、セキュリティと、kikit の原則に照らした観点を補う。確かめた指摘を GitHub の pending review（下書き）に付け、送るかどうかはユーザーが決める。"
 ---
 
 # work-review-github-pr
@@ -29,12 +29,7 @@ PR 番号か URL を受け取る。なければ今のブランチの PR を使�
 
 ### 3. 足りない観点を確かめる
 
-- 目的: 本文や issue のゴールを diff が満たしているか
-- スコープ: 本文と diff が食い違っていないか。関係のない変更が混ざっていないか
-- テスト: 変更した振る舞いをテストが確かめているか。CI が失敗していれば、原因が PR にあるか
-- セキュリティ: secret の混入、入力の検証、権限の確認
-
-linter や formatter が見つけるものは指摘しない。
+[references/perspectives.md](references/perspectives.md) の観点で diff を確かめる。
 
 ### 4. 指摘を分けて確かめる
 
