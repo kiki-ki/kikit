@@ -36,7 +36,3 @@ disable-model-invocation: true
 - どれを正にするかを決め、残りを参照か生成に置き換える。片方だけを直して終えない
 - 正は、その情報を変える人が最初に開く場所へ置く。決まらなければ、その情報をいちばん使う側へ置く
 - 写しどうしが食い違っていたら、実際の挙動でどちらが正しいかを確かめてから正を決める（[principle-prove-it-works](../principle-prove-it-works/SKILL.md)）
-
-## 似た原則との違い
-
-[principle-encode-lessons-in-structure](../principle-encode-lessons-in-structure/SKILL.md) は、繰り返し受ける訂正を仕組みで守らせる話だ。この原則は、情報をどこに置くかを決める話だ。

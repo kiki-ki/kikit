@@ -25,8 +25,6 @@ disable-model-invocation: true
 
 仕組みで直せるなら、仕組みだけで直す。文章の指示を足すのは症状への対処だ。
 
-指示ではなく値や定義の写しを書こうとしているなら、情報の置き場の話なので [principle-keep-one-source-of-truth](../principle-keep-one-source-of-truth/SKILL.md) に従う。
-
 ## 訂正を受けたら
 
 - 人間に訂正されたりテストが落ちたりしたら、一度きりか、繰り返すパターンかを判断する
