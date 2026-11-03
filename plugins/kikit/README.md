@@ -41,6 +41,12 @@
 | [tool-herdr](skills/tool-herdr/SKILL.md) | Herdr を操作する |
 | [tool-hunk-review](skills/tool-hunk-review/SKILL.md) | Hunk のセッションで差分をレビューする |
 
+## 並列セッションの検出
+
+同じワークツリーで別の Claude Code セッションが動いていると、編集や git の操作がぶつかる。[hooks/session-guard.sh](hooks/session-guard.sh) がこれを検出する。
+
+各セッションは、開始時と作業ディレクトリを移ったときに、自分の PID とワークツリーを `.git/kikit-sessions/` に登録し、終了時に消す。開始時に、同じワークツリーで生きている別のセッションが見つかったら、専用のワークツリーへ EnterWorktree で移るよう、モデルに伝える。後から始めたセッションだけが移り、先に動いていたセッションは何も知らされない。jq がないマシンと、git リポジトリの外では何もしない。
+
 ## 出典
 
 principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
