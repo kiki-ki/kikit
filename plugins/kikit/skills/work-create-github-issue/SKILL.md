@@ -17,7 +17,7 @@ description: "GitHub issue を起票するときに使う。「issue 作って�
 4. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、下のテンプレートに沿って本文の下書きを作る
 5. 下の「起票する前に見直すこと」で見直す
 6. 下書きをユーザーに見せ、合意を取る。起票すると外部に公開されるので、合意なしに起票しない
-7. `gh issue create --repo <owner>/<repo> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で起票する。シングルクォートの heredoc は本文をそのまま渡すので、backtick、`$`、`\` はエスケープしない。ラベルを付けるときだけ `--label <ラベル>` を足す
+7. `gh issue create --repo <owner>/<repo> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で起票する。ラベルを付けるときだけ `--label <ラベル>` を足す
 8. 返ってきた issue の URL をユーザーに伝える
 
 ## タイトルと言語
@@ -61,6 +61,5 @@ description: "GitHub issue を起票するときに使う。「issue 作って�
 
 ## 起票する前に見直すこと
 
-- ユーザーや team をメンションしていない。ハンドル名は、バッククォートで囲むか言い換えてある
-- issue や PR を、`#123` ではなく完全な URL で参照している
+- 手順 4 で読んだ work-technical-writing の「GitHub に書くとき」に沿っている
 - 公開のリポジトリなら、社内のシステムの URL や、外に出せない情報を書いていない
