@@ -17,6 +17,7 @@ PR のレビューと自分の変更のレビューで共有する、1 回分の
 | テスト | 変更した振る舞いを、実物を動かすテストが確かめているか。モックの呼び出しや実装の写しだけを確かめていないか。状態機械や並行処理のように組み合わせの多いロジックを変えたなら、例のテストだけで済ませていないか（[principle-prove-it-works](../../principle-prove-it-works/SKILL.md)）。CI が失敗していれば、原因が変更にあるか | テストが通ったままになる壊し方 |
 | 根本原因 | nil チェック、例外の握りつぶし、リトライのような、症状を黙らせるガードで直していないか。同じパターンがほかに残っていないか。[principle-fix-root-causes](../../principle-fix-root-causes/SKILL.md) | 原因のある箇所、grep で見つかる同じパターン |
 | 仕組みで守る制約 | コメントやドキュメントだけで守らせている制約のうち、型、テスト、lint で守れるものがないか。[principle-encode-lessons-in-structure](../../principle-encode-lessons-in-structure/SKILL.md) | 制約を守らせる型、テスト、lint の案 |
+| 正の置き場 | 変更が値、定義、説明の写しを新しく作っていないか。写しのある情報を片方だけ直していないか。前からある写しは対象にしない。[principle-keep-one-source-of-truth](../../principle-keep-one-source-of-truth/SKILL.md) | 写し元と写しの箇所、直し残した写し |
 | セキュリティ | secret の混入、信頼境界での入力の検証、権限の確認 | secret の行、検証されずに使われる入力、確認なしに通る操作 |
 
 ## 3. 指摘を分けて確かめる
