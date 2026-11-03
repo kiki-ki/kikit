@@ -1,6 +1,6 @@
 ---
 name: work-review-github-pr
-description: "GitHub の PR をレビューするときに使う。「PR をレビューして」「この PR 見て」と頼まれたときに使う。バグ探しは /code-review に任せ、PR の目的の達成、スコープ、テスト、セキュリティと、kikit の原則に照らした観点を補う。確かめた指摘を GitHub の pending review（下書き）に付け、送るかどうかはユーザーが決める。"
+description: "GitHub の PR をレビューするときに使う。「PR をレビューして」「この PR 見て」と頼まれたときに使う。バグ探しは /code-review に任せ、それが見ない観点を補う。確かめた指摘を GitHub の pending review（下書き）に付け、送るかどうかはユーザーが決める。"
 ---
 
 # work-review-github-pr
