@@ -167,8 +167,8 @@ importers:
   .:
     devDependencies:
       '@anthropic-ai/claude-code':
-        specifier: 2.1.322
-        version: 2.1.322
+        specifier: 2.1.327
+        version: 2.1.327
       '@textlint-ja/textlint-rule-preset-ai-writing':
         specifier: 1.7.0
         version: 1.7.0
@@ -188,60 +188,60 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       textlint-rule-preset-ja-spacing:
-        specifier: 3.0.4
-        version: 3.0.4
+        specifier: 3.1.0
+        version: 3.1.0
       textlint-rule-preset-ja-technical-writing:
         specifier: 12.0.2
         version: 12.0.2
 
 packages:
 
-  '@anthropic-ai/claude-code-darwin-arm64@2.1.322':
-    resolution: {integrity: sha512-OAx5Y7V7tGCi0tWuDV3lwcDWmIua512NgpClLbqvwC9m+mbLiaytgVLXf4unTXBjMf+QbQiIUO1Kus90PklDhA==}
+  '@anthropic-ai/claude-code-darwin-arm64@2.1.327':
+    resolution: {integrity: sha512-LAK6PYjIZLxLMqhjj/R4bexyKqItk8RXtyUpIHPpgs3opSBzNb7AszbbN3hfdyoyf0VacA2hThVsnDkkpz9R7g==}
     cpu: [arm64]
     os: [darwin]
 
-  '@anthropic-ai/claude-code-darwin-x64@2.1.322':
-    resolution: {integrity: sha512-nGpWAtSEI1OMMVzlMGS4MuXZ6Op0kzXPnTzhbipgEA7Ym3LFHuCWE//9jB20xcy55zx9lagSe4tb9kRfvZ9Xdw==}
+  '@anthropic-ai/claude-code-darwin-x64@2.1.327':
+    resolution: {integrity: sha512-QNGpfnwjftqzx1otsZjD9f+PAyo7PBomfnB+yNBgZ911o/1ERu9S5n5oNL3jeJTGV2pLbrVRCx/yg2X4/zkqOA==}
     cpu: [x64]
     os: [darwin]
 
-  '@anthropic-ai/claude-code-linux-arm64-musl@2.1.322':
-    resolution: {integrity: sha512-lcJl5oH4RtUVp7uRSpj/jrXubXDrK1v62lt50lyAaILH5wJM/psaTTlF8E+aFGFd0MT7nGinypjYapgB88Zhvg==}
+  '@anthropic-ai/claude-code-linux-arm64-musl@2.1.327':
+    resolution: {integrity: sha512-zVRKZ1IdMOvm7M4Y0FIuJY1g3BWnpGVUOv8Fu8kGHYk0WbkES1BkuJG0O/6Jzd+LhkadEmBypz0odbGqvoqD+w==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@anthropic-ai/claude-code-linux-arm64@2.1.322':
-    resolution: {integrity: sha512-YYNp1op87WWcBEE6jC1neOjMDPdn4Iy+kUHyFcI1GsLl4IwH7EjZlwVKcpsZqVbE0IXEFaOldmyOHC1y3j18Ag==}
+  '@anthropic-ai/claude-code-linux-arm64@2.1.327':
+    resolution: {integrity: sha512-vI4ygSwj6e8f0hWzM2sRxe6r2OvQU35HgoIZtx0rkvu574lxCFUUKUpn9hgWd6FwwMFz2gQyRhwQD7lPmTgW9A==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@anthropic-ai/claude-code-linux-x64-musl@2.1.322':
-    resolution: {integrity: sha512-Tmb7C0xAFVLe4pWBmIxlAfulysXfdqgAd1GGp0DWrGxY9YZ5uiIaq25GeddBxB9IfNfWrZBcWU2g9Skb4piazQ==}
+  '@anthropic-ai/claude-code-linux-x64-musl@2.1.327':
+    resolution: {integrity: sha512-GhxvaKxZSNSFOyGP3Dwm+QoHz2h5TMmONN+GXb4xH4tbWT5AnvoCT6P62r342fTdGoonVEigEH1bnkcALNzLOw==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@anthropic-ai/claude-code-linux-x64@2.1.322':
-    resolution: {integrity: sha512-0DoaNAXLWCYYIGachWBCkTUsS8dOOgvk4R2fFKdrLejO9XlRTwaWUMD9ONdDmv0csdpwxj4qLUN6zWMaG2Sz6g==}
+  '@anthropic-ai/claude-code-linux-x64@2.1.327':
+    resolution: {integrity: sha512-uJ24I+t47cpQjeo31ZrHepsFQ8QUsLjCxmDxLshMjYHEtoxhQdgKc4iuViQDaKpFqn3puR85gwHlLj4e7s+1iQ==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@anthropic-ai/claude-code-win32-arm64@2.1.322':
-    resolution: {integrity: sha512-UTmhBanbWh5/i3a3o2CWfewluw5xWvvSr8TpfZs/XHBKQsWybMorUwDJIJDErkyy+cQ55UklH7foJIqGBMjjGQ==}
+  '@anthropic-ai/claude-code-win32-arm64@2.1.327':
+    resolution: {integrity: sha512-NRHSCyQEVLxhOHSP/nuiZwdTABGGICNiUfiJe2Z2BDOcodR6kCg99rYuLlXoyws6SLI50tzgjZLDL9c9KeZkrw==}
     cpu: [arm64]
     os: [win32]
 
-  '@anthropic-ai/claude-code-win32-x64@2.1.322':
-    resolution: {integrity: sha512-MCf137rbW8N6PjmF04HHmKfc+yKHu8w3Uq0yqkIj5snr3KHAL4et+H5bMe05DgFmjdnRoXIVcaXg4QXgHNUw4A==}
+  '@anthropic-ai/claude-code-win32-x64@2.1.327':
+    resolution: {integrity: sha512-iOg2eIuMxvTiqIjS0rl//2iWU4ziZ6hyFzzvr/1cxNTTUH9miYNehzZaAni8chj3tB2RnQp81B1NZW3CnveuSQ==}
     cpu: [x64]
     os: [win32]
 
-  '@anthropic-ai/claude-code@2.1.322':
-    resolution: {integrity: sha512-oP7oW4vM5DREWfL1jn4JSGlmLcrJ5QmppgADrVNJBUPiC1mQ5YvRrke0on+YZ/3QhKIaCJtdr6jPvehcAQIHLQ==}
+  '@anthropic-ai/claude-code@2.1.327':
+    resolution: {integrity: sha512-QToNtikIupqVMsxRUdDHUP0nS/uv3Wc43vcbT8YNRo7FtQOE9MvYLqPLQPoVhJ2DQQVPOFMB5PkaBNJbnNYeVg==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
@@ -1388,8 +1388,8 @@ packages:
   textlint-rule-ja-hiragana-keishikimeishi@1.1.0:
     resolution: {integrity: sha512-rNwTzQdwGopLxesjXMYQi1MVzZbQOx7fap7dAcbajtvMCKMtucYcvOIptgegagpHctaRa303NqbHLhqMv3OIeg==}
 
-  textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana@3.0.4:
-    resolution: {integrity: sha512-HyrmjTuvA1vs3GLzsg67Z1ts1pIyRJSaovALinLfCD0XoSMiWnGMU1aN5UN0VzgVSYZEW+na7/YIji6TGrmCXg==}
+  textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana@3.1.0:
+    resolution: {integrity: sha512-yHI/jAp31yTLqdQWRoC49zjFK8x0LmW88s2NKcjWppuRuw2pHSDF0oI09g5hjwkqgeui127ykDcdXtVSTDBf1g==}
 
   textlint-rule-ja-no-abusage@3.0.0:
     resolution: {integrity: sha512-DIqPZgYTwTsvjX6Bgj7GA8vlwGMObagJpNoUtkucOaoy7E7GwUOL+knqFjcTtlkWSmoKpIkw5OWW5CV3kivlfQ==}
@@ -1400,14 +1400,14 @@ packages:
   textlint-rule-ja-no-redundant-expression@4.0.1:
     resolution: {integrity: sha512-r8Qe6S7u9N97wD0gcrASqBUdZs5CMEVlgc8Ul+D2NQFiOi1BoseOMo5I9yUsEZMAL46yh/eaw9+EWz6IDlPWeA==}
 
-  textlint-rule-ja-no-space-around-parentheses@3.0.4:
-    resolution: {integrity: sha512-VYE5YXcI/DNvF67INXkJOmGYxqcGHcV9gpW2Fg9iW8cKzsEr36J1noVnjxynvSKMkSYK3m5oNhj2BIjcYNGUcw==}
+  textlint-rule-ja-no-space-around-parentheses@3.1.0:
+    resolution: {integrity: sha512-vQBBDY+Ey79dwpTWq70/RvB4dD2aP82Sn+RtZVM6iIWFzJX3+zDVTgGRc39XSvtUKUYkYEO02k7ODpMe32ijSw==}
 
-  textlint-rule-ja-no-space-around-slash@3.0.4:
-    resolution: {integrity: sha512-YjaFe0PJk+Hu9RhE1fgfVoQ8QMnRBXdd7pHq7NCv/ZlXojM1QOOTTkBtVUn3YLi9cejC6REwgLESYgY9MALhuQ==}
+  textlint-rule-ja-no-space-around-slash@3.1.0:
+    resolution: {integrity: sha512-Y0oHU1FrTaCTUftVbIrlx+dI6smTuqO3PXTnTQRvIMs64FQgOTu4zRGBJD/uGwAfeYAbNntqYGxNeLkVMCxM8Q==}
 
-  textlint-rule-ja-no-space-between-full-width@3.0.4:
-    resolution: {integrity: sha512-kIObqfsOYnaFS22nrLbVDXGl39J4J+GjM/UF4+qhSSlGY9V1wwvTxDe3q/NMFtLvu93kE+pFE2s7Bd8P3rNOgQ==}
+  textlint-rule-ja-no-space-between-full-width@3.1.0:
+    resolution: {integrity: sha512-n3CJuWYuXOW9P40RbeFj8TGyKxzLZqItyfcSJ7tbrtVN0Kz7bncmsfq+1dxWdjghvJoQ4kyJEd+qKFKWWH+3tA==}
 
   textlint-rule-ja-no-successive-word@2.1.0:
     resolution: {integrity: sha512-c9DVpR6kk9DuVi8yysR/lay4wEwHisBoyR648fTbePb/NDpKjJo/XpltcjD73KgpJysZNt0SKBd6PZT12tB09Q==}
@@ -1415,26 +1415,26 @@ packages:
   textlint-rule-ja-no-weak-phrase@2.0.0:
     resolution: {integrity: sha512-jZ1/3VnE8Bz/p0CCe/+BVOmWE1cZwpDkjKb6hnq39nGk3OD4XPW7biYavK/4/mZhk4bh2+Vtu1xV26lg8d+vBw==}
 
-  textlint-rule-ja-space-after-exclamation@3.0.4:
-    resolution: {integrity: sha512-HOxdaRME4Ni14Cw1qf0ixfH8sC0o42syLiiaSjNtnAZRG3U0dvexj990bLP9Jc/70NXgoQcFYij7CA1vF/1aKQ==}
+  textlint-rule-ja-space-after-exclamation@3.1.0:
+    resolution: {integrity: sha512-Zp8/9FkwXnbcWcT7y8NLb6AkTO8x/GEXGml1woThBKyBkLGR9Rqo3y/7gG6lWbrp0xGJsa53jxvpilndANcDfQ==}
 
-  textlint-rule-ja-space-after-question@3.0.4:
-    resolution: {integrity: sha512-M2TQlxZWWtFhK/rEbYM2FfoHsXEJmF7nYPWEIQilYKwUQZsOR6ZauEb2T2rKiiUNFpqCGvESMaTyT4wkCoWEPw==}
+  textlint-rule-ja-space-after-question@3.1.0:
+    resolution: {integrity: sha512-2R66AbOE7OwCgsZOhXUF9gepLzPTvrENNNXL6PZgkRSBhZFzpCTb2r9C94HgW67VodJCcuKourt5zqrcJh81GQ==}
 
-  textlint-rule-ja-space-around-code@3.0.4:
-    resolution: {integrity: sha512-HlNSX72QX3fM+xr5InIn9BjagZ4k35dixs950ynbQ4ulSIZeph2PNncVvhiE0KlCEzmlqCfwqQedVETfjyyvmw==}
+  textlint-rule-ja-space-around-code@3.1.0:
+    resolution: {integrity: sha512-GRYneTtVZC3UbUGShcYbxXSiEW5blhe12bn1prCjUdxgwID/HIp9ThUepKxErz0EJsc+i0P6wKLdZB3NdFb7WQ==}
 
-  textlint-rule-ja-space-around-emphasis@3.0.4:
-    resolution: {integrity: sha512-mIj1CBgFI05IgLSphEXlkZKLL6zZCaWBiwvIqL13GECztQRD1zjHRXDTSN+Dfbvy7lxLkLcqKG3PfQoXmyfvhw==}
+  textlint-rule-ja-space-around-emphasis@3.1.0:
+    resolution: {integrity: sha512-GpIDB8yvy2Dsj3N9ZMFf133KDoZTjjpDwVPL+crq/y/26RVUHzhfWtVw3MlwUoqe19Aqe3pn2WyRsnEX/lnG4g==}
 
-  textlint-rule-ja-space-around-link@3.0.4:
-    resolution: {integrity: sha512-NsEgUPEEPbHZY5cn6JC3CUmjveJ0NvDcRvc5tIRW3e+nFzcM8w35PqUWiDKDEiPd67hp4u9nmdtYozPMC6PAFw==}
+  textlint-rule-ja-space-around-link@3.1.0:
+    resolution: {integrity: sha512-193PZ7kuWJxBGEPfowMRzs6ItDyz3d5vn+hChN1GsnkdUYfBSP1rAUQLM8lMqtaw1e0453QkagShyW/Bg26FLg==}
 
-  textlint-rule-ja-space-around-strong@3.0.4:
-    resolution: {integrity: sha512-TBT0Jb5+C497KAzeaQUB/TyR/MqJpe3cm8r6D/TiyIYhTntKY/+Dl/fFDHov1DugVrDw0OtsEcn0ipTs5/8SWw==}
+  textlint-rule-ja-space-around-strong@3.1.0:
+    resolution: {integrity: sha512-zbSGiIeKxVd2HNKYeKpQdQe/EhEIdSK/GFGENXIcLApNTTGfgfC0JLhK2vhQuT6SaUb634oHj5Xjg42x39orKw==}
 
-  textlint-rule-ja-space-between-half-and-full-width@3.0.4:
-    resolution: {integrity: sha512-hFQcUdaZhNSNcMosod8JrUQY+sYpoBGx+FvKU7vFG1gyHU1d+nuqQAZpA9mK4UDgDVfkllErKTg3NEO5L+/1Zw==}
+  textlint-rule-ja-space-between-half-and-full-width@3.1.0:
+    resolution: {integrity: sha512-fLelFLBe2lKQRxtWLkqdbY/E0iakPMqbPj90wx5/ZECqYTwgzusRDq0VtDXNYqHd0i+7Plj4UKQ0YUpX+Dii5w==}
 
   textlint-rule-ja-unnatural-alphabet@2.0.1:
     resolution: {integrity: sha512-n93V8qh6OKdh8OB6yLT+9Xl8DSoZ7gWi51tWdhlLEPIWgBm18nLMgm6Ck+nVc3eENOdRcQURWUpCGotI8wTemA==}
@@ -1481,8 +1481,8 @@ packages:
   textlint-rule-period-in-list-item@1.0.1:
     resolution: {integrity: sha512-dNPa4WzePcgsz8A+CxFGQgKNZCEvjjwMCu3DFcpYB4eKuhcSISEiS/mvEO42oGAALJluYdYVZxN3yMD6XzkLBA==}
 
-  textlint-rule-preset-ja-spacing@3.0.4:
-    resolution: {integrity: sha512-cd4R4gfIntQBH25F0yDd0W8T5FTHaHWOqV9Wt+5lsMG0je74KlcAJjUgbQrmJJxVWZXMpV4A0Y7C1IUQlwIyTQ==}
+  textlint-rule-preset-ja-spacing@3.1.0:
+    resolution: {integrity: sha512-PKF9K0fWoOZgx9CY7kl3fEXPltIKHnn03Tf+B5vGXxHy3JdvyEMlwp1AQyug1lzZ2L7+wdhVB1OqQuzzae7nug==}
 
   textlint-rule-preset-ja-technical-writing@12.0.2:
     resolution: {integrity: sha512-BBVY6oA5V799k5wRfP+gCpDHsp6vWjWX2UT+/KLlAFFsNdmRB8Z6qyOnqiOjfzmLGIRgoMcPI1dXj5upOqnD6Q==}
@@ -1639,40 +1639,40 @@ packages:
 
 snapshots:
 
-  '@anthropic-ai/claude-code-darwin-arm64@2.1.322':
+  '@anthropic-ai/claude-code-darwin-arm64@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-darwin-x64@2.1.322':
+  '@anthropic-ai/claude-code-darwin-x64@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-linux-arm64-musl@2.1.322':
+  '@anthropic-ai/claude-code-linux-arm64-musl@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-linux-arm64@2.1.322':
+  '@anthropic-ai/claude-code-linux-arm64@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-linux-x64-musl@2.1.322':
+  '@anthropic-ai/claude-code-linux-x64-musl@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-linux-x64@2.1.322':
+  '@anthropic-ai/claude-code-linux-x64@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-win32-arm64@2.1.322':
+  '@anthropic-ai/claude-code-win32-arm64@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code-win32-x64@2.1.322':
+  '@anthropic-ai/claude-code-win32-x64@2.1.327':
     optional: true
 
-  '@anthropic-ai/claude-code@2.1.322':
+  '@anthropic-ai/claude-code@2.1.327':
     optionalDependencies:
-      '@anthropic-ai/claude-code-darwin-arm64': 2.1.322
-      '@anthropic-ai/claude-code-darwin-x64': 2.1.322
-      '@anthropic-ai/claude-code-linux-arm64': 2.1.322
-      '@anthropic-ai/claude-code-linux-arm64-musl': 2.1.322
-      '@anthropic-ai/claude-code-linux-x64': 2.1.322
-      '@anthropic-ai/claude-code-linux-x64-musl': 2.1.322
-      '@anthropic-ai/claude-code-win32-arm64': 2.1.322
-      '@anthropic-ai/claude-code-win32-x64': 2.1.322
+      '@anthropic-ai/claude-code-darwin-arm64': 2.1.327
+      '@anthropic-ai/claude-code-darwin-x64': 2.1.327
+      '@anthropic-ai/claude-code-linux-arm64': 2.1.327
+      '@anthropic-ai/claude-code-linux-arm64-musl': 2.1.327
+      '@anthropic-ai/claude-code-linux-x64': 2.1.327
+      '@anthropic-ai/claude-code-linux-x64-musl': 2.1.327
+      '@anthropic-ai/claude-code-win32-arm64': 2.1.327
+      '@anthropic-ai/claude-code-win32-x64': 2.1.327
 
   '@azu/format-text@1.0.2': {}
 
@@ -3176,7 +3176,7 @@ snapshots:
       kuromojin: 2.1.1
       morpheme-match-all: 1.2.0
 
-  textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana@3.0.4:
+  textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
@@ -3200,15 +3200,15 @@ snapshots:
       textlint-rule-helper: 2.5.0
       textlint-util-to-string: 3.3.4
 
-  textlint-rule-ja-no-space-around-parentheses@3.0.4:
+  textlint-rule-ja-no-space-around-parentheses@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-no-space-around-slash@3.0.4:
+  textlint-rule-ja-no-space-around-slash@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-no-space-between-full-width@3.0.4:
+  textlint-rule-ja-no-space-between-full-width@3.1.0:
     dependencies:
       regx: 1.0.4
       textlint-rule-helper: 2.5.0
@@ -3224,31 +3224,31 @@ snapshots:
       morpheme-match: 2.0.4
       morpheme-match-all: 2.0.5
 
-  textlint-rule-ja-space-after-exclamation@3.0.4:
+  textlint-rule-ja-space-after-exclamation@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-space-after-question@3.0.4:
+  textlint-rule-ja-space-after-question@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-space-around-code@3.0.4:
+  textlint-rule-ja-space-around-code@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-space-around-emphasis@3.0.4:
+  textlint-rule-ja-space-around-emphasis@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-space-around-link@3.0.4:
+  textlint-rule-ja-space-around-link@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-space-around-strong@3.0.4:
+  textlint-rule-ja-space-around-strong@3.1.0:
     dependencies:
       textlint-rule-helper: 2.5.0
 
-  textlint-rule-ja-space-between-half-and-full-width@3.0.4:
+  textlint-rule-ja-space-between-half-and-full-width@3.1.0:
     dependencies:
       '@textlint/regexp-string-matcher': 2.0.2
       textlint-rule-helper: 2.5.0
@@ -3334,19 +3334,19 @@ snapshots:
     dependencies:
       check-ends-with-period: 3.0.2
 
-  textlint-rule-preset-ja-spacing@3.0.4:
+  textlint-rule-preset-ja-spacing@3.1.0:
     dependencies:
-      textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana: 3.0.4
-      textlint-rule-ja-no-space-around-parentheses: 3.0.4
-      textlint-rule-ja-no-space-around-slash: 3.0.4
-      textlint-rule-ja-no-space-between-full-width: 3.0.4
-      textlint-rule-ja-space-after-exclamation: 3.0.4
-      textlint-rule-ja-space-after-question: 3.0.4
-      textlint-rule-ja-space-around-code: 3.0.4
-      textlint-rule-ja-space-around-emphasis: 3.0.4
-      textlint-rule-ja-space-around-link: 3.0.4
-      textlint-rule-ja-space-around-strong: 3.0.4
-      textlint-rule-ja-space-between-half-and-full-width: 3.0.4
+      textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana: 3.1.0
+      textlint-rule-ja-no-space-around-parentheses: 3.1.0
+      textlint-rule-ja-no-space-around-slash: 3.1.0
+      textlint-rule-ja-no-space-between-full-width: 3.1.0
+      textlint-rule-ja-space-after-exclamation: 3.1.0
+      textlint-rule-ja-space-after-question: 3.1.0
+      textlint-rule-ja-space-around-code: 3.1.0
+      textlint-rule-ja-space-around-emphasis: 3.1.0
+      textlint-rule-ja-space-around-link: 3.1.0
+      textlint-rule-ja-space-around-strong: 3.1.0
+      textlint-rule-ja-space-between-half-and-full-width: 3.1.0
 
   textlint-rule-preset-ja-technical-writing@12.0.2:
     dependencies:
