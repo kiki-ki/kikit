@@ -46,17 +46,4 @@
 
 ## 出典
 
-次の skill は [pstack](https://github.com/cursor/plugins/tree/12d587df/pstack)（Lauren Tan、MIT）の skill を翻訳し、書き直しや追記をしたもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
-
-| kikit の skill | 元にした pstack の skill |
-|---|---|
-| principle-build-the-lever | principle-build-the-lever |
-| principle-encode-lessons-in-structure | principle-encode-lessons-in-structure |
-| principle-fix-root-causes | principle-fix-root-causes |
-| principle-guard-the-context-window | principle-guard-the-context-window |
-| principle-laziness-protocol | principle-laziness-protocol |
-| principle-prove-it-works | principle-prove-it-works |
-| principle-sequence-verifiable-units | principle-sequence-verifiable-units |
-| meta-reflect | reflect |
-| work-no-comments | no-comments |
-| work-technical-writing | technical-writing |
+一部の skill は [pstack](https://github.com/cursor/plugins/tree/12d587df/pstack)（Lauren Tan、MIT）を翻訳し、書き直したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
