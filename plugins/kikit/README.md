@@ -46,4 +46,17 @@
 
 ## 出典
 
-principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
+次の skill は [pstack](https://github.com/cursor/plugins/tree/12d587df/pstack)（Lauren Tan、MIT）の skill を翻訳し、書き直しや追記をしたもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
+
+| kikit の skill | 元にした pstack の skill |
+|---|---|
+| principle-build-the-lever | principle-build-the-lever |
+| principle-encode-lessons-in-structure | principle-encode-lessons-in-structure |
+| principle-fix-root-causes | principle-fix-root-causes |
+| principle-guard-the-context-window | principle-guard-the-context-window |
+| principle-laziness-protocol | principle-laziness-protocol |
+| principle-prove-it-works | principle-prove-it-works |
+| principle-sequence-verifiable-units | principle-sequence-verifiable-units |
+| meta-reflect | reflect |
+| work-no-comments | no-comments |
+| work-technical-writing | technical-writing |
