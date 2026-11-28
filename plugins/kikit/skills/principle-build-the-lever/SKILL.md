@@ -1,7 +1,6 @@
 ---
 name: principle-build-the-lever
-description: "自明でない作業（編集、移行、分析、チェック）をするときに適用する。手で進める代わりに、作業をする・確かめる道具（codemod、スクリプト、ジェネレータ、サブエージェント向けのスキル）を作り、レビュアーが再実行できる形で残す。"
-disable-model-invocation: true
+description: "手作業の代わりに、作業をする・確かめる道具（スクリプト、codemod、ジェネレータ）を作るための原則。リポジトリ全体や多数のファイルにまたがる置換・書き換え・移行、条件に合う箇所の洗い出しや一括チェックを頼まれたときに使う。"
 ---
 
 # principle-build-the-lever
@@ -24,3 +23,5 @@ disable-model-invocation: true
 - 道具は仕事をこなせる最小のスクリプトにする。フレームワークは作らない（[principle-laziness-protocol](../principle-laziness-protocol/SKILL.md)）
 
 繰り返す指示を仕組みにする [principle-encode-lessons-in-structure](../principle-encode-lessons-in-structure/SKILL.md) とは別の話で、こちらは目の前の作業を速く、確かめやすくするためのものだ。
+
+完了を報告する前に、Skill ツールで `kikit:principle-prove-it-works` を呼び、その確かめ方に従う。

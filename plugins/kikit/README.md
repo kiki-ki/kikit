@@ -6,8 +6,6 @@
 
 ## principle: どの作業にも当てはまる原則
 
-この層の skill はモデルからは自動で呼ばれない。SessionStart の hook（[hooks/router.sh](hooks/router.sh)）が、各 SKILL.md の description とパスの一覧を [hooks/router.md](hooks/router.md) の前置きと合わせて差し込む。モデルは、条件に当たった原則の SKILL.md を Read で読む。description から自動で呼ばせるより確実に読まれるためだ。
-
 | skill | すること |
 |---|---|
 | [principle-laziness-protocol](skills/principle-laziness-protocol/SKILL.md) | 先に消し、最小の変更にする |
@@ -21,7 +19,9 @@
 
 ## meta: エージェントの働き方を改善する
 
-[meta-reflect](skills/meta-reflect/SKILL.md) で、セッションの学びを仕組みに残す。
+| skill | すること |
+|---|---|
+| [meta-reflect](skills/meta-reflect/SKILL.md) | セッションの学びを仕組みに残す |
 
 ## work: 特定の作業の手順
 
@@ -46,4 +46,4 @@
 
 ## 出典
 
-principle-*、meta-reflect、work-no-comments、work-technical-writing は [pstack](https://github.com/cursor/plugins/tree/main/pstack)（Lauren Tan、MIT、コミット `12d587df`）を翻訳・改変したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。
+一部の skill は [pstack](https://github.com/cursor/plugins/tree/12d587df/pstack)（Lauren Tan、MIT）を翻訳し、書き直したもの。ライセンス全文は [LICENSE-pstack](LICENSE-pstack)。

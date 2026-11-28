@@ -1,7 +1,6 @@
 ---
 name: principle-keep-one-source-of-truth
-description: "同じ値・定義・手順・説明・設定を 2 か所目に書こうとしたとき、またはすでに複数の場所に写しがあるのを見つけたときに適用する。正とする場所を 1 つ決め、ほかの場所を参照や生成で正に従わせる。今は同じでも、変わる理由が別のものはまとめない。"
-disable-model-invocation: true
+description: "値・定義・手順・説明の写しを作らないための原則。既存の設定値や定数を別の場所でも使う、ドキュメントに設定や仕様を書き写す、重複を整理する作業を頼まれたときに使う。"
 ---
 
 # principle-keep-one-source-of-truth

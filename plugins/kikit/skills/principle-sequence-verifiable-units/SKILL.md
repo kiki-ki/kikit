@@ -1,7 +1,6 @@
 ---
 name: principle-sequence-verifiable-units
-description: "複数ステップの作業（一斉置換、移行、似た編集の繰り返し）をするとき、コミットや PR の積み方を決めるときに適用する。確かめられる小さな単位に分け、1 つずつ確かめてから次に進み、レビュアーが順に追えば正しさが分かる順番で届ける。"
-disable-model-invocation: true
+description: "作業を確かめられる小さな単位に分けて進めるための原則。一斉置換、リネーム、移行、バージョンアップのように多数の箇所や段階にまたがる作業、コミットや PR の分け方を決めるときに使う。"
 ---
 
 # principle-sequence-verifiable-units
@@ -24,3 +23,5 @@ disable-model-invocation: true
 - 機能の前に、足場を作る
 
 各チェックを本物にするのは [principle-prove-it-works](../principle-prove-it-works/SKILL.md)、チェックを安くするのは [principle-build-the-lever](../principle-build-the-lever/SKILL.md) の役割だ。
+
+完了を報告する前に、Skill ツールで `kikit:principle-prove-it-works` を呼び、その確かめ方に従う。
