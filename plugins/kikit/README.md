@@ -19,7 +19,9 @@
 
 ## meta: エージェントの働き方を改善する
 
-[meta-reflect](skills/meta-reflect/SKILL.md) で、セッションの学びを仕組みに残す。
+| skill | すること |
+|---|---|
+| [meta-reflect](skills/meta-reflect/SKILL.md) | セッションの学びを仕組みに残す |
 
 ## work: 特定の作業の手順
 
