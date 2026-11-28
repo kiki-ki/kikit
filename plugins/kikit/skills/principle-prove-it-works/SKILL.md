@@ -1,7 +1,6 @@
 ---
 name: principle-prove-it-works
-description: "作業を終えて完了と言う前に適用する。自己申告や「コンパイルが通った」ではなく、本物（機能を実際に動かす、実際の値を読む、diff を見る）で確かめ、その結果を示す。"
-disable-model-invocation: true
+description: "変更が本当に動くかを、本物の結果で確かめるための原則。バグ修正、設定値の変更、機能の追加など、コードや設定を変える作業を頼まれたときは、ほかの原則と合わせて使う。完了を報告する前の確かめ方を、作業に入る前に決める。"
 ---
 
 # principle-prove-it-works

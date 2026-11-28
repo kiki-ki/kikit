@@ -1,7 +1,6 @@
 ---
 name: principle-fix-root-causes
-description: "デバッグするときに適用する。まず再現し、「なぜ」を繰り返して根本原因まで辿り、そこで直す。クラッシュを黙らせる nil チェックのようなガードは足さない。"
-disable-model-invocation: true
+description: "バグを根本原因で直すための原則。エラー・例外・クラッシュ・テストの失敗・想定と違う挙動を「直して」「原因を調べて」と頼まれたときに使う。"
 ---
 
 # principle-fix-root-causes
@@ -19,3 +18,5 @@ disable-model-invocation: true
 ## 再起動の後だけ壊れるとき
 
 コードより先に、古い永続状態を疑う。設定ファイル、キャッシュ、ロックファイル、シリアライズされた状態だ。状態ファイルを消して直るなら、状態の検証を直すことを優先する。
+
+完了を報告する前に、Skill ツールで `kikit:principle-prove-it-works` を呼び、その確かめ方に従う。
