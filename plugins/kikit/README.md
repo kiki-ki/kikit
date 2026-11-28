@@ -1,6 +1,6 @@
 # kikit
 
-どの作業にも当てはまる原則と、特定の作業やツールの手順をまとめた skill 集。`kikit:principle-prove-it-works` のように `kikit:` を付けて呼ぶ。各 skill をいつ使い何をするかは、リンク先の SKILL.md に書いてある。
+どの作業にも当てはまる原則と、特定の作業やツールの手順をまとめた skill 集。
 
 1 skill 1 責務とし、必要になったものだけを足す。層は名前の prefix で表す。
 
@@ -32,12 +32,12 @@
 | [work-create-github-issue](skills/work-create-github-issue/SKILL.md) | 着手できる GitHub issue を起票する |
 | [work-create-github-pr](skills/work-create-github-pr/SKILL.md) | レビューできる draft PR を作る |
 | [work-review-github-pr](skills/work-review-github-pr/SKILL.md) | GitHub の PR をレビューし、指摘を下書きする |
-| [work-review-own-changes](skills/work-review-own-changes/SKILL.md) | 自分の変更を、指摘がなくなるまでレビューと修正を繰り返して仕上げる。`/kikit:work-review-own-changes` で呼んだときだけ動く |
+| [work-review-own-changes](skills/work-review-own-changes/SKILL.md) | 自分の変更を、指摘がなくなるまでレビューと修正を繰り返して仕上げる |
 | [work-handle-out-of-scope-findings](skills/work-handle-out-of-scope-findings/SKILL.md) | スコープ外の発見を、大きさに応じて混ぜるか、サブエージェントに任せるか、issue にする |
 
 ## tool: 特定のツールの操作
 
-この層の skill は手順の本文を持たず、呼ばれたときにツールが出力する手順を読み込む。ツールの版と手順がずれない代わりに、ツールがインストールされていないマシンでは呼び出しが失敗する。
+この層の skill は、呼ばれたときにツールが出力する手順を読み込む。ツールがないマシンでは失敗する。
 
 | skill | すること |
 |---|---|

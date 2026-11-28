@@ -11,11 +11,12 @@ description: "GitHub の PR を作るときに使う。「PR 作って」「PR �
 
 1. base を決める。指定がなければ、リポジトリの既定のブランチにする
 2. `git fetch origin` のあと、`git log origin/<base>..HEAD` と `git diff origin/<base>...HEAD` で PR が含む変更を読む。関係のない変更や未コミットの変更があれば、止まってユーザーに確かめる
-3. `git push -u origin <branch>` で、リモートにないコミットを push する
-4. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`git ls-files | grep -i pull_request_template` で GitHub の PR テンプレートが見つかれば、下のテンプレートの代わりにその節立てを使う
-5. 下の「作る前に見直すこと」で見直す
-6. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る
-7. PR の URL をユーザーに伝える
+3. Skill ツールで `kikit:principle-prove-it-works` を呼び、変更の目的が達成されたことを確かめる。確かめた結果は、本文の検証の節に書く
+4. `git push -u origin <branch>` で、リモートにないコミットを push する
+5. [work-technical-writing](../work-technical-writing/SKILL.md) を読んでから、タイトルと本文を書く。`git ls-files | grep -i pull_request_template` で GitHub の PR テンプレートが見つかれば、下のテンプレートの代わりにその節立てを使う
+6. 下の「作る前に見直すこと」で見直す
+7. `gh pr create --draft --base <base> --title "<タイトル>" --body "$(cat <<'EOF' ... EOF)"` で作る
+8. PR の URL をユーザーに伝える
 
 ## タイトル
 
@@ -58,4 +59,4 @@ Closes: <issue の完全な URL>
 - 本文が、いまの diff と食い違っていない
 - diff を読めば分かること（ファイルや関数ごとの変更の列挙、コードの逐語的な説明）を書いていない
 - 根拠のない「影響なし」と、セッション中のユーザーとのやり取りを書いていない
-- 手順 4 で読んだ `work-technical-writing` の「GitHub に書くとき」に沿っている
+- 手順 5 で読んだ `work-technical-writing` の「GitHub に書くとき」に沿っている
